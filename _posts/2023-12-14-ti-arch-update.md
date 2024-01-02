@@ -1,9 +1,8 @@
 +++
-title = 'TI Arch Update'
-date = 2023-12-14T07:33:33-08:00
-draft = false
+title = "TI Arch Update"
+date = 2023-12-14
 +++
-
+(reuploaded from the hugo cesspool)
 # Woohooo This Isn't a Dead Project Just Yet!!!!
 So the project didn't die on the first day, which is good,
 because that usually happens with the projects I make.
