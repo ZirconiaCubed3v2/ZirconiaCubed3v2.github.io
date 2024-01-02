@@ -1,6 +1,6 @@
 ---
-title = "TI Arch Update"
-date = 2023-12-14
+title: "TI Arch Update"
+date: 2023-12-14
 ---
 (reuploaded from the hugo cesspool)
 # Woohooo This Isn't a Dead Project Just Yet!!!!
