@@ -3,7 +3,6 @@ body {
   font-family: 'Cousine', monospace;
   font-weight: bold;
 }
-
 p {
   color: #cb4b16;
   font-family: 'Cousine', monospace;
@@ -14,4 +13,9 @@ a {
   font-family: 'Cousine', monospace;
   font-weight: bold;
   text-decoration: none;
+}
+.date {
+  color: #839496;
+  font-family: 'Cousine', monospace;
+  font-weight: bold;
 }
