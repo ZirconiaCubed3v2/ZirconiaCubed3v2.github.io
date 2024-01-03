@@ -2,3 +2,8 @@
 title: The Zirconiac Speaks
 ---
 Welcome to yet another one of my quickly multiplying test blogs. Hopefully this one will work the way I want it to.
+
+{% for post in site.posts %}
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  {{ post.excerpt }}
+{% endfor %}
