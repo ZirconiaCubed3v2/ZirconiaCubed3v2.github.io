@@ -1,34 +1,6 @@
-$body-width: 800px;
-$phone-max-width: 570px;
-
-$desktop-vertical-margins: 20px;
-$phone-vertical-margins: 10px;
-
-$main-color: #F91111;
-$text-color: #564A4A;
-
-@mixin on-phone {
-  @media screen and (max-width: $phone-max-width) {
-    @content;
-  }
-}
-
 #body {
   background-color: black;
-  max-width: $body-width;
-  color: $text-color;
-  margin: $desktop-vertical-margins auto;
-  @include on-phone {
-    margin: $phone-vertical-margins auto;
-  }
-}
-
-a {
-  color: $main-color;
-  text-decoration: none;
-
-  &:hover {
-    color: lighten($color-main, 15%);
-    text-decoration: underline;
-  }
+  max-width: 800px;
+  color: blue;
+  margin: 20px auto;
 }
