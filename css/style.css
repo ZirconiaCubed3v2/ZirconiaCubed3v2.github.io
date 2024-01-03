@@ -1,9 +1,11 @@
 body {
   background-color: #073642;
   font-family: 'Cousine', monospace;
+  font-weight: bold;
 }
 
 p {
   color: #cb4b16;
   font-family: 'Cousine', monospace;
+  font-weight: bold;
 }
