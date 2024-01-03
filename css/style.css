@@ -21,3 +21,8 @@ a {
   font-size: 12px;
   margin-top: 0.5em;
 }
+#paginator {
+  color: #2aa198;
+  font-family: 'Cousine', monospace;
+  font-weight: bold;
+}
