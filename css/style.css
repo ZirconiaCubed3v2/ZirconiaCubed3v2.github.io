@@ -14,7 +14,7 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
-.date {
+#date {
   color: #839496;
   font-family: 'Cousine', monospace;
   font-weight: bold;
