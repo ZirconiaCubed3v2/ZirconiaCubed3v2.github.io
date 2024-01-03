@@ -4,7 +4,6 @@ date: 2023-12-14
 ---
 (reuploaded from the hugo cesspool)
 <br>
-### Woohooo This Isn't a Dead Project Just Yet!!!!
 So the project didn't die on the first day, which is good,
 because that usually happens with the projects I make.
 So here's an update on some of the things that have been
