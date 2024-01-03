@@ -1,7 +1,7 @@
-#remote_theme: pages-themes/minima@v0.2.0
-#plugns:
-#- jekyll-remote-theme
-theme: minima
+remote_theme: pages-themes/minima@v0.2.0
+plugns:
+- jekyll-remote-theme
+#theme: minima
 minima:
   skin: dark
 header_pages:
