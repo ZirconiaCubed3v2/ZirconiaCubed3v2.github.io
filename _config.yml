@@ -2,5 +2,7 @@
 #plugns:
 #- jekyll-remote-theme
 theme: minima
+minima:
+  skin: dark
 author: "The Zirconiac"
 title: "The Zirconiac Speaks"
