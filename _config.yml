@@ -1,7 +1,2 @@
-remote_theme: pages-themes/hacker@v0.2.0
-plugns:
-- jekyll-remote-theme
-header_pages:
-- about.md
+name: "The Zirconiac Speaks"
 author: "The Zirconiac"
-title: "The Zirconiac Speaks"
