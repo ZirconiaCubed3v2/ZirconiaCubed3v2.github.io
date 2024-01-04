@@ -8,6 +8,9 @@ p {
   font-family: 'Cousine', monospace;
   font-weight: bold;
 }
+a {
+  text-decoration: none;
+}
 #sitetitle {
   color: #859900;
   font-family: 'Cousine', monospace;
