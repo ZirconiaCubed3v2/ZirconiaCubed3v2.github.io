@@ -40,4 +40,4 @@ to other people as it does to me.
 &nbsp;  
 
 Still not doing drugs,  
-<p style="color: purple">The Zirconiac</p>
+<p id="sig">The Zirconiac</p>
