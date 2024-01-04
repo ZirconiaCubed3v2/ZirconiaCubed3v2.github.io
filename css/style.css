@@ -11,6 +11,11 @@ p {
 a {
   text-decoration: none;
 }
+#sig {
+  color: #ff0af7;
+  font-family: 'Cousine', monospace;
+  font-weight: bold;
+}
 #heading {
   color: #268bd2
 }
