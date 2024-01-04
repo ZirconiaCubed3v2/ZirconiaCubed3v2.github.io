@@ -9,12 +9,12 @@ because that usually happens with the projects I make.
 So here's an update on some of the things that have been
 happening:
 
-### Exams:
+### Exams: {#identifier .heading}
 I am almost 100% sure I haven't scored over an 80% on
 any of my semester exams, which is fine, I guess I didn't
 really *need* to pass any of those classes.
 
-### Calculator:
+### Calculator: {#identifier .heading}
 TI-Arch is going pretty good, the usb hub works, but
 a big problem is that the kernel doesn't support
 SHA-1, and I am not rebuilding the kernel, so there's
