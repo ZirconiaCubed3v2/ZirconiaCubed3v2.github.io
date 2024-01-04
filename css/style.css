@@ -14,6 +14,11 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
+title {
+  color: #268bd2;
+  font-family: 'Cousine', monospace;
+  font-weight: bold;
+}
 #date {
   color: #839496;
   font-family: 'Cousine', monospace;
