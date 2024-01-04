@@ -40,4 +40,4 @@ to other people as it does to me.
 &nbsp;  
 
 Still not doing drugs,  
-![](_images/sig.png)
+![](https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/master/_images/sig.png?raw=true)
