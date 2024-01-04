@@ -3,5 +3,5 @@ author: "The Zirconiac"
 description: "A blog for The Zirconiac that talks about all things, but mostly electronics."
 url: "http://zirconiacubed3v2.github.io"
 permalink: "/:title"
-paginate: 50
+paginate: 2
 paginate_path: "/:num"
