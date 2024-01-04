@@ -9,12 +9,12 @@ because that usually happens with the projects I make.
 So here's an update on some of the things that have been
 happening:
 
-<h3>Exams:</h3>
+<h3 id="heading">Exams:</h3>
 I am almost 100% sure I haven't scored over an 80% on
 any of my semester exams, which is fine, I guess I didn't
 really *need* to pass any of those classes.
 
-<h3>Calculator:</h3>
+<h3 id="heading">Calculator:</h3>
 TI-Arch is going pretty good, the usb hub works, but
 a big problem is that the kernel doesn't support
 SHA-1, and I am not rebuilding the kernel, so there's
@@ -23,7 +23,7 @@ not over for network access, because I could still try
 to get a usb ethernet adapter connected and access the
 internet that way.
 
-<h3>The Blog Itself:</h3>
+<h3 id="heading">The Blog Itself:</h3>
 I have no idea how to make a blog, especially the fact
 that all these pages are written in markdown. I have
 no idea how to use markdown past the basic things
@@ -32,7 +32,7 @@ you can use html tags to spice things up, but I'm
 pretty skeptical about whether Hugo will like that
 or not.
 
-<h3>Final Notes:</h3>
+<h3 id="heading">Final Notes:</h3>
 Not much has happened in the past few days, but I
 hope this blog doesn't sound nearly as boring
 to other people as it does to me.
