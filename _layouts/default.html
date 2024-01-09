@@ -6,27 +6,19 @@
   <head>
     <link rel="icon" type="image/jpg" href="favicon.jpg">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>{{ site.name }}</title
+    <title>{{ site.name }}</title>
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
-    <p>
+
+    <ul class="navbar" style="list-style:none;">
+      <li style="display:inline-block;"><a href="/about.html">About/</a> &nbsp;&nbsp;</li>
+      <li style="display:inline-block;"><a href="/contact.html">Contact/</a> &nbsp;&nbsp;</li>
+      <li style="display:inline-block;"><a href="/services.html">Services/</a> &nbsp;&nbsp;</li>
+    </ul>
   </head>
   <body>
-
-
-      <nav>
-      <div class="heading">
-        <h4>Navigation Bar</h4>
-      </div>
-      <ul class="nav-links">
-        <li><a href="info/about.html">About</a></li>
-        <li><a href="info/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
-
       <h1><a id="sitetitle" href="/">{{ site.name }}</a></h1>
 
       {{ content }}
