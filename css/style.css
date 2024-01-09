@@ -12,6 +12,10 @@ a {
   color: #268bd2;
   text-decoration: none;
 }
+button {
+  color: #268bd2;
+  text-decoration: none;
+}
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
