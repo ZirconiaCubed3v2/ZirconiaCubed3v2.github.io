@@ -4,7 +4,7 @@ layout: default
 
 {% for post in paginator.posts %}
   <h2 style="margin-bottom: 0.1em"><a id="posttitle" href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p id="date">// {{ post.date }}</p>
+  <p id="date">// {{ post.date | date_to_string }}</p>
   <p id="description">{{ post.description }}</p>
   <hr style="color:#b58900">
 {% endfor %}
