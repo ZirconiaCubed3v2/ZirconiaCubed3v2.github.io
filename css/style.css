@@ -15,6 +15,12 @@ a {
 #heading {
   color: #268bd2;
 }
+#description {
+  color: #cb4b16;
+  font-family: 'Cousine', monospace;
+  font-weight: bold;
+  font-size: 14;
+}
 #sitetitle {
   color: #859900;
   font-family: 'Cousine', monospace;
