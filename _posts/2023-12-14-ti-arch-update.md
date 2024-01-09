@@ -1,6 +1,7 @@
 ---
 title: "TI Arch Update"
 date: 2023-12-14
+description: "migrated from the hugo cesspool"
 ---
 (reuploaded from the hugo cesspool)
 <br>
