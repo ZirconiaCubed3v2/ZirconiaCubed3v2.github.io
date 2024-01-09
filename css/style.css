@@ -18,7 +18,7 @@ button {
   text-decoration: none;
   font-family: 'Cousine', monospace;
   font-weight: bold;
-  font-size: 20;
+  font-size: 20px;
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
