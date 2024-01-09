@@ -18,6 +18,7 @@ nav {
   align-items: center;
   min-height: 8vh;
   font-family: 'Cousine', monospace;
+  display: inline-block;
 }
 #heading {
   color: #268bd2;
