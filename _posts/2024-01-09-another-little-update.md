@@ -12,8 +12,8 @@ I managed to upload <a style="text-decoration:underline;" href="https://github.c
 <br>
 <h3 id="heading">Manjaro is The Best</h3>
 Manjaro is now my new favorite linux distro and OS period, mainly because it has the DIY-feel of Arch without the need to do _everything_ yourself, like in Arch. In Manjaro, what I want to do myself I can do myself, but everything I don't want to do myself I can leave as it is, because it is most likely already handled by default. For example, I have the compromise of KDE Plasma, a beautiful window manager, but I can also configure custom shortcuts like in Awesome WM, without having to do all the extra configuration and headaches that come with installing Awesome.
-&nbsp;
-&nbsp;
+&nbsp;  
+&nbsp;  
 
 I can't promise a stable post schedule,  
 <img src="https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/main/_images/sig.png?raw=true" alt="signature" style="width:250px;"/>
