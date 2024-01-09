@@ -15,5 +15,5 @@ Manjaro is now my new favorite linux distro and OS period, mainly because it has
 &nbsp;
 &nbsp;
 
-I can't promise a stable post schedule,
+I can't promise a stable post schedule,  
 <img src="https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/main/_images/sig.png?raw=true" alt="signature" style="width:250px;"/>
