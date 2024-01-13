@@ -8,6 +8,6 @@ So I uploaded <a style="text-decoration:underline;" href="https://github.com/ckc
 If I can manage to capture the byte sequences of BLE beacon notifications on android devices like Samsungs and LGs, then I might be able to build those into the code, and it'll affect those devices as well, which would be a lot more fun. I've even made it into some people's Instagram posts talking about iPhones randomly freezing all day. A lot of people ask me why I do the things I do, and here's the answer: Sheer boredom and the anonymous glory that comes with seeing people make wrong assumptions about problems I caused, and not getting into any trouble for doing it.  
 &nbsp;  
 &nbsp;  
-  
+
 Never stop shenaniganizing,  
 <img src="https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/main/_images/sig.png?raw=true" alt="signature" style="width:250px;"/>
