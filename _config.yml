@@ -2,6 +2,8 @@ name: "The Zirconiac Speaks"
 author: "The Zirconiac"
 description: "A blog for The Zirconiac that talks about all things, but mostly electronics."
 url: "http://zirconiacubed3v2.github.io"
+plugins:
+  - jekyll-sitemap
 permalink: "/:title"
 paginate: 5
 paginate_path: "/:num"
