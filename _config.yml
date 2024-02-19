@@ -7,3 +7,4 @@ plugins:
 permalink: "/:title"
 paginate: 5
 paginate_path: "/:num"
+google_site_verification: "google-site-verification=ihFGTiiJNSmqdD-mUmtYNIPk3Zr6WgOMFPppfMXvPvI"
