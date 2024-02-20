@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Home - The Zirconiac Speaks">
+  <meta name="keywords" content="home, zirconiac, blog">
+  <meta name="author" content={{ site.author }}>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <title>Home - {{ site.name }}</title>
 {% for post in paginator.posts %}
   <h2 style="margin-bottom: 0.1em"><a id="posttitle" href="{{ post.url }}">{{ post.title }}</a></h2>
