@@ -2,6 +2,7 @@
 title: "Just a Little Update"
 date: 2024-01-09
 description: "another update, although I should stop calling these updates, because this is how most of them are going to be"
+keywords: ""
 ---
 I have to remember to do these blog posts, because if I don't it will just be another dead project, and that's the last thing I need for anyone to see: my lack of commitment. Anyway, here's another little update for you to (hopefully) read:
 <br>

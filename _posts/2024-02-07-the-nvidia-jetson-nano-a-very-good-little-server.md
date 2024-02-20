@@ -2,6 +2,7 @@
 title: "The Nvidia Jetson Nano: A Very Good Little Server"
 date: 2024-02-07
 description: "I found an Nvidia Jetson Nano and turned it into a very useful home server"
+keywords: "jetson, nvidia, nano, server, plex, ubuntu, home"
 ---
 &emsp;I found an Nvidia Jetson Nano in the junk pile that is my house, and I've been having some fun with it. The Nvidia Jetson Nano (referred to as Jetson from now on, the whole name is annoying to type out each time) is a raspberry-pi-ish computer, but made by Nvidia. It has an ARMv8 64-bit Cortex Processor, and an Nvidia Maxwell L4T GPU (yes, it has an actual gpu). It's not very powerful, but that gpu makes it better for things like video processing and AI, but I haven't really done much with the AI side yet.  
   
