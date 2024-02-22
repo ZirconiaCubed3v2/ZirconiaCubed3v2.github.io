@@ -2,7 +2,7 @@
 title: "Google Search Console is a Headache"
 date: 2024-02-20
 description: "I finally got my blog to show up in a google search, but it was stupidly convoluted to do so"
-keywords: "google, search, console, domain, github, blog, website"
+keywords: google, search, console, domain, github, blog, website
 ---
 &emsp;Hooray for me, I finally got this blog onto google, being a result after someone searches for 'zirconiac'. I do still have to figure out why my site icon isn't showing up in the results listing, but at least it's there now!  
   
