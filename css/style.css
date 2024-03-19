@@ -29,7 +29,7 @@ button {
 .card {
   border: 2px solid #e7e7e7;
   border-radius: 4px;
-  #padding: .5rem;
+  padding: .5rem;
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
