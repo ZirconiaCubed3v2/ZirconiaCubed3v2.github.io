@@ -22,9 +22,9 @@ button {
 }
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 31%);
+  grid-template: repeat(auto-fill, 30%);
   grid-auto-rows: auto;
-  grid-gap: 1rem;
+  gap: 3%;
 }
 .card {
   border: 2px solid #e7e7e7;
