@@ -23,7 +23,7 @@ button {
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1% 1%;
+  grid-gap: 1%;
 }
 .card {
   border: 2px solid #e7e7e7;
