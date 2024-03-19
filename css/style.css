@@ -22,7 +22,7 @@ button {
 }
 .cards {
   display: grid;
-  grid-template: repeat(auto-fill, 30%);
+  grid-template: repeat(3, 1fr);
   grid-auto-rows: auto;
   gap: 3%;
 }
