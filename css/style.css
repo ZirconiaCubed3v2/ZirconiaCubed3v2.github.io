@@ -61,12 +61,11 @@ a {
 .card {
   border: 2px solid #090909;
   border-radius: 4px;
-  padding: .5rem;
-  height: 95%;
+  padding: 1rem;
   background-color: #050505;
 }
 .card:hover {
-  background-color: #111111;
+  background-color: #222222;
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
