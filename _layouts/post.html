@@ -28,17 +28,19 @@
     </nav>
   </head>
   <body>
-    <div style="margin:10px;">
+    <div style="margin:20px;">
       <title>{{ page.title }} - {{ site.name }}</title>
       <h2 id="posttitle" style="text-align:center;">{{ page.title }}</h2>
       <p id="date">// {{ page.date | date_to_string }}</p>
       <div style="margin-left:5%;margin-right:5%">
-      {{ content }}
+        {{ content }}
       </div>
 
-      <hr>
-      <p id="date">© {{ site.time | date: '%Y' }} {{ site.author }}.</p>
-      <a href="https://github.com/zirconiacubed3v2" style="text-decoration:none;color:#268bd2">Follow me on Github</a>
+      <div style="background-color:#111111"
+        <hr>
+        <p id="date">© {{ site.time | date: '%Y' }} {{ site.author }}.</p>
+        <a href="https://github.com/zirconiacubed3v2" style="text-decoration:none;color:#268bd2">Follow me on Github</a>
+      </div>
     </div>
   </body>
 
