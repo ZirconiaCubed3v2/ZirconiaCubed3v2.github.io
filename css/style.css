@@ -27,6 +27,7 @@ a {
   padding: 0;
   overflow: hidden;
   background-color: #000000;
+  white-space: nowrap;
 }
 .mainnav li {
   float: left;
