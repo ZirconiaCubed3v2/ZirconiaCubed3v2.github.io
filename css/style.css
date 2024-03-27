@@ -20,7 +20,7 @@ a {
   align-items: center;
   margin-left: auto;
   background-color: #333333;
-  padding: 0px 0px;
+  margin: 0px;
 }
 .mainnav ul {
   list-style-type: none;
