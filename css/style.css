@@ -16,7 +16,6 @@ a {
 
 
 .mainnav {
-  display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: 50px;
