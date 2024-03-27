@@ -63,6 +63,10 @@ a {
   border: 2px solid #e7e7e7;
   border-radius: 4px;
   padding: .5rem;
+  background-color: #333333;
+}
+.card:hover {
+  background-color: #000000;
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
