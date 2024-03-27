@@ -12,33 +12,6 @@ a {
   color: #268bd2;
   text-decoration: none;
 }
-.mainnav {
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  background-color: #002b36;
-  color: #268bd2;
-  font-family: 'Cousine', monospace;
-  font-weight: bold;
-  font-size: 20px;
-}
-.mainnav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.mainnav li {
-  float: left;
-}
-.mainnav a {
-  display: inline-block;
-  color: #CCCCCC;
-  text-align: center;
-  padding: 14px 16px;
-}
-.mainnav a:hover {
-  background-color: #FFFFFF;
-}
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
