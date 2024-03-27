@@ -41,7 +41,7 @@ a {
   text-decoration: none;
   font-size: 17px;
 }
-.mainnav li a:hover {
+.mainnav li:hover {
   background-color: #222222;
 }
 
