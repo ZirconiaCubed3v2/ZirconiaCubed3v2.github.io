@@ -19,7 +19,7 @@ a {
   display: flex;
   align-items: center;
   margin-left: auto;
-  background-color: #333333;
+  background-color: #303030;
   margin: 0px;
 }
 .mainnav ul {
@@ -27,7 +27,7 @@ a {
   margin: 0;
   padding: 0px 0px;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #303030;
   white-space: nowrap;
 }
 .mainnav li {
