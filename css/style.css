@@ -60,13 +60,13 @@ a {
   grid-gap: 1%;
 }
 .card {
-  border: 2px solid #e7e7e7;
+  border: 2px solid #090909;
   border-radius: 4px;
   padding: .5rem;
-  background-color: #333333;
+  background-color: #050505;
 }
 .card:hover {
-  background-color: #000000;
+  background-color: #111111;
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
