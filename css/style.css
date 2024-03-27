@@ -12,13 +12,31 @@ a {
   color: #268bd2;
   text-decoration: none;
 }
-button {
+.navbar {
+  display: block;
+  height: 50px;
+  line-height: 50px;
   background-color: #002b36;
   color: #268bd2;
-  text-decoration: none;
   font-family: 'Cousine', monospace;
   font-weight: bold;
   font-size: 20px;
+}
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  float: left;
+}
+.navbar a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+}
+.navbar a.active {
+  background-color: #000000;
 }
 .cards {
   display: grid;
