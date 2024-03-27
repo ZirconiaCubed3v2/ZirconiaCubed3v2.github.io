@@ -32,11 +32,12 @@ a {
 }
 .mainnav a {
   display: inline-block;
+  color: #CCCCCC;
   text-align: center;
   padding: 14px 16px;
 }
-.mainnav a.active {
-  background-color: #000000;
+.mainnav a:hover {
+  background-color: #FFFFFF;
 }
 .cards {
   display: grid;
