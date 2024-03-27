@@ -32,6 +32,7 @@ a {
 .mainnav li {
   float: left;
   padding: 10px 0px;
+  vertical-align: center;
 }
 .mainnav li a {
   display: block;
