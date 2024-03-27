@@ -16,6 +16,7 @@ a {
 
 
 .mainnav {
+  display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: 50px;
@@ -31,11 +32,11 @@ a {
 .mainnav li {
   float: left;
   padding: 10px 0px;
+  text-align: center;
 }
 .mainnav li a {
   display: block;
   color: #268bd2;
-  align-items: center;
   text-align: center;
   padding: 0px 16px;
   text-decoration: none;
