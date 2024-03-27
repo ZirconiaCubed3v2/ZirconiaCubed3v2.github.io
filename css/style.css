@@ -12,6 +12,32 @@ a {
   color: #268bd2;
   text-decoration: none;
 }
+
+
+
+.mainnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+.mainnav li {
+  float: left;
+}
+.mainnav li a {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.mainnav li a:hover {
+  background-color: #222222;
+}
+
+
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
