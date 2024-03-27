@@ -5,7 +5,7 @@ url: "http://zirconiacubed3v2.github.io"
 plugins:
   - jekyll-sitemap
 permalink: "/:title"
-paginate: 5
+paginate: 6
 paginate_path: "/:num"
 google_site_verification: ihFGTiiJNSmqdD-mUmtYNIPk3Zr6WgOMFPppfMXvPvI
 enable_google_verification: true
