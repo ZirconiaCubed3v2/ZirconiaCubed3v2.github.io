@@ -24,7 +24,7 @@ a {
 .mainnav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px 0px;
   overflow: hidden;
   background-color: #000000;
   white-space: nowrap;
@@ -36,7 +36,7 @@ a {
   display: block;
   color: #FFFFFF;
   text-align: center;
-  padding: 10px 16px;
+  padding: 0px 16px;
   text-decoration: none;
 }
 .mainnav li a:hover {
