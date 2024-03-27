@@ -13,9 +13,6 @@ a {
   color: #268bd2;
   text-decoration: none;
 }
-head {
-  margin: 0px;
-}
 
 
 .mainnav {
@@ -56,6 +53,7 @@ head {
 
 
 .cards {
+  margin: 3px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(200px, 200px);
