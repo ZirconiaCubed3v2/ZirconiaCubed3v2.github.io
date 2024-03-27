@@ -10,15 +10,15 @@ layout: default
 </head>
 <title>Home - {{ site.name }}</title>
 <div class="cards">
-  <a href="{{ post.url }}">
-    {% for post in paginator.posts %}
+  {% for post in paginator.posts %}
+  <a href="{{ post.title }}">
     <div class="card">
       <h2 style="margin-bottom: 0.1em">{{ post.title }}</h2>
       <p id="date">// {{ post.date | date_to_string }}</p>
       <p id="description">{{ post.description }}</p>
     </div>
-    {% endfor %}
   </a>
+  {% endfor %}
 </div>
 <br>
 {% include paginator.html %}
