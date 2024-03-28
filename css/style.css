@@ -81,7 +81,7 @@ a {
   border-radius: 4px;
   padding: 0.5rem;
   background-color: #AAAAAA;
-  min-height: 100px;
+  min-height: 200px;
 }
 .card:hover {
   background-color: #222222;
