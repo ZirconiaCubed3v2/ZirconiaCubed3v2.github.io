@@ -72,7 +72,7 @@ a {
     margin: 7px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(100px, auto);
+    grid-template-rows: repeat(100px, max-content);
     grid-gap: 1%
   }
 }
