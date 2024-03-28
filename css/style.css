@@ -62,7 +62,7 @@ a {
   .cards {
     margin: 7px;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1);
     grid-auto-rows: minmax(100px, 100px);
     grid-gap: 1%;
   }
