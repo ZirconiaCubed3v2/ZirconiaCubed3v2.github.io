@@ -65,7 +65,7 @@ a {
   background-color: #050505;
 }
 .card:hover {
-  background-color: #222222;
+  background-color: #AAAAAA;
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
