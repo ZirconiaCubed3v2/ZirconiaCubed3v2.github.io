@@ -112,14 +112,14 @@ a {
 }
 @media (max-width: 500px) {
   #cardtitle {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 0.1em;
   }
   .cards {
     margin: 7px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 40vh;
+    grid-auto-rows: 38vh;
     grid-gap: 1%;
   }
   .card {
@@ -127,7 +127,7 @@ a {
     border-radius: 4px;
     padding: 0.5rem;
     background-color: #090909;
-    height: 35vh;
+    height: 33vh;
   }
 }
 .card:hover {
