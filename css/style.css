@@ -51,6 +51,9 @@ a {
 }
 
 @media (min-width: 1250px) {
+  #cardtitle {
+    font-size: 24px;
+  }
   .cards {
     margin: 7px;
     display: grid;
@@ -67,6 +70,9 @@ a {
   }
 }
 @media (min-width: 801px) and (max-width: 1249px) {
+  #cardtitle {
+    font-size: 18px;
+  }
   .cards {
     margin: 7px;
     display: grid;
@@ -83,6 +89,9 @@ a {
   }
 }
 @media (min-width: 501px) and (max-width: 800px) {
+  #cardtitle {
+    font-size: 24px;
+  }
   .cards {
     margin: 7px;
     display: grid;
@@ -99,6 +108,9 @@ a {
   }
 }
 @media (max-width: 500px) {
+  #cardtitle {
+    font-size: 24px;
+  }
   .cards {
     margin: 7px;
     display: grid;

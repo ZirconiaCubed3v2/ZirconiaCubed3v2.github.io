@@ -13,7 +13,7 @@ layout: default
   {% for post in paginator.posts %}
   <a href="{{ post.url }}">
     <div class="card">
-      <h2 style="margin-bottom: 0.1em">{{ post.title }}</h2>
+      <h2 id="cardtitle" style="margin-bottom: 0.1em">{{ post.title }}</h2>
       <p id="date">// {{ post.date | date_to_string }}</p>
       <p id="description">{{ post.description }}</p>
     </div>
