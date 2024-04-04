@@ -246,7 +246,7 @@ a {
     height: 30vh;
   }
 }
-@media (min-width: 316) and (max-width: 500px) {
+@media (min-width: 316px) and (max-width: 500px) {
   .mainnav {
     display: flex;
     align-items: center;
