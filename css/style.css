@@ -1,5 +1,5 @@
 body {
-  background-color: #FFFFFF;
+  background-color: #030303;
   font-family: 'Cousine', monospace;
   font-weight: bold;
 }
@@ -77,10 +77,10 @@ a {
   }
 }
 .card {
-  border: 2px solid #090909;
+  border: 3px solid #839496;
   border-radius: 4px;
   padding: 0.5rem;
-  background-color: #080808;
+  background-color: #090909;
   height: 30vh;
 }
 .card:hover {
