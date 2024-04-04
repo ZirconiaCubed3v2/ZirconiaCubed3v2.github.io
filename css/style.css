@@ -120,7 +120,7 @@ a {
     height: 30vh;
   }
 }
-@media (min-width: 692px) and (max-width: 800px) {
+@media (min-width: 816px) and (max-width: 800px) {
   .mainnav {
     display: flex;
     align-items: center;
@@ -162,7 +162,7 @@ a {
     height: 30vh;
   }
 }
-@media (min-width: 601px) and (max-width: 691px) {
+@media (min-width: 601px) and (max-width: 815px) {
   .mainnav {
     display: flex;
     align-items: center;
