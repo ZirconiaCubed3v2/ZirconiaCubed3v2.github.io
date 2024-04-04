@@ -123,8 +123,6 @@ a {
   margin-top: 0.5em;
 }
 #paginator {
-  display: block;
-  float: left;
   background-color: #111111;
   color: #268bd2;
   font-family: 'Cousine', monospace;
