@@ -55,7 +55,7 @@ a {
   margin: 7px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(200px, 1fr);
+  grid-auto-rows: 50vh;
   grid-gap: 1%;
 }
 @media (max-width: 500px) {
@@ -72,7 +72,7 @@ a {
     margin: 7px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 1fr;
+    grid-auto-rows: 50vh;
     grid-gap: 1%
   }
 }
