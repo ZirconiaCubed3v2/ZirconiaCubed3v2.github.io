@@ -130,6 +130,6 @@ a {
   font-family: 'Cousine', monospace;
   font-weight: bold;
 }
-#paginator p {
+#paginator #blanked {
   color: #222222;
 }
