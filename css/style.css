@@ -80,10 +80,10 @@ a {
   border: 2px solid #090909;
   border-radius: 4px;
   padding: 0.5rem;
-  background-color: #AAAAAA;
+  background-color: #080808;
 }
 .card:hover {
-  background-color: #222222;
+  background-color: #555555;
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
