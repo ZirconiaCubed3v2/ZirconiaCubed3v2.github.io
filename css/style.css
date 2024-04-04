@@ -246,7 +246,7 @@ a {
     height: 30vh;
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 316) and (max-width: 500px) {
   .mainnav {
     display: flex;
     align-items: center;
@@ -286,6 +286,48 @@ a {
     padding: 0.5rem;
     background-color: #090909;
     height: 33vh;
+  }
+}
+@media (max-width: 315px) {
+  .mainnav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    background-color: #303030;
+    margin: 0px;
+  }
+  .mainnav a {
+    display: block;
+    color: #268bd2;
+    text-align: center;
+    padding: 3px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 50px;
+  }
+  .mainnav a:hover {
+    background-color: #000000;
+  }
+  .mainnav a:active {
+    background-color: #000000;
+  }
+  #cardtitle {
+    font-size: 20px;
+    margin-bottom: 0.1em;
+  }
+  .cards {
+    margin: 7px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1%;
+  }
+  .card {
+    border: 3px solid #839496;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background-color: #090909;
+    height: auto;
   }
 }
 .card:hover {
