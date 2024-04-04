@@ -134,3 +134,7 @@ a {
   display: inline-block;
   color: #222222;
 }
+#paginator #divider {
+  display: inline-block;
+  color: #839496;
+}
