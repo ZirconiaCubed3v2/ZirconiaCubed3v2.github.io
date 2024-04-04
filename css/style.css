@@ -248,13 +248,24 @@ a {
 }
 @media (min-width: 501px) and (max-width: 600px) {
   .mainnav {
-    display: flex;
+    display: inline-block;
+    position: relative;
     align-items: center;
     margin-left: auto;
     background-color: #303030;
     margin: 0px;
   }
-  .mainnav a {
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .dropdown:hover dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
     display: block;
     color: #268bd2;
     text-align: center;
@@ -263,10 +274,10 @@ a {
     font-size: 17px;
     line-height: 50px;
   }
-  .mainnav a:hover {
+  .dropdown-content a:hover {
     background-color: #000000;
   }
-  .mainnav a:active {
+  .dropdown-content a:active {
     background-color: #000000;
   }
   #cardtitle {
