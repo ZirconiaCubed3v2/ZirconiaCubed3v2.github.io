@@ -55,7 +55,7 @@ a {
   margin: 7px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 20vh;
+  grid-auto-rows: 40vh;
   grid-gap: 1%;
 }
 @media (max-width: 500px) {
@@ -63,7 +63,7 @@ a {
     margin: 7px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 20vh;
+    grid-auto-rows: 40vh;
     grid-gap: 1%;
   }
 }
@@ -72,7 +72,7 @@ a {
     margin: 7px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 20vh;
+    grid-auto-rows: 40vh;
     grid-gap: 1%
   }
 }
