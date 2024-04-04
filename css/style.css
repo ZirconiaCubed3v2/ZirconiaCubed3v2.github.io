@@ -1,3 +1,6 @@
+@viewport {
+  orientation: portrait;
+}
 body {
   background-color: #030303;
   font-family: 'Cousine', monospace;
