@@ -81,6 +81,7 @@ a {
   border-radius: 4px;
   padding: 0.5rem;
   background-color: #080808;
+  height: 50vh
 }
 .card:hover {
   background-color: #555555;
