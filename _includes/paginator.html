@@ -1,16 +1,18 @@
 <head>
   <link rel="stylesheet" type="text/css" href="/css/style.css"
 </head>
+<div id="paginator">
 {% if paginator.next_page or paginator.previous_page %}
   {% if paginator.previous_page %}
-    <a id="paginator" href="{{ paginator.previous_page_path }}">Previous page</a>
+    <a href="{{ paginator.previous_page_path }}">Previous page</a>
   {% else %}
     Previous page
   {% endif %}
   |
   {% if paginator.next_page %}
-    <a id="paginator" href="{{ paginator.next_page_path }}">Next page</a>
+    <a href="{{ paginator.next_page_path }}">Next page</a>
   {% else %}
     Next page
   {% endif %}
 {% endif %}
+</div>
