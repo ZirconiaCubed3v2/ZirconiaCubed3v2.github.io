@@ -147,6 +147,6 @@ a {
   font-weight: bold;
 }
 #paginator #blanked {
-  display: inline-block;
+  display: inline;
   color: #839496;
 }
