@@ -92,7 +92,7 @@ a {
 }
 @media (min-width: 501px) and (max-width: 800px) {
   #cardtitle {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 0.1em;
   }
   .cards {
@@ -112,7 +112,7 @@ a {
 }
 @media (max-width: 500px) {
   #cardtitle {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 0.1em;
   }
   .cards {
