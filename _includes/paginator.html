@@ -6,13 +6,13 @@
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}">Previous page</a>
   {% else %}
-    <p>Previous page</p>
+    <div id="blanked">Previous page</div>
   {% endif %}
   |
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}">Next page</a>
   {% else %}
-    <p>Next page</p>
+    <div id="blanked">Next page</div>
   {% endif %}
 {% endif %}
 </div>
