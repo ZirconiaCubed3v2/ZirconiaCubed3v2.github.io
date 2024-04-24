@@ -1,0 +1,20 @@
+---
+title: "HACKINTOSH!!!"
+date: 2024-04-24
+description: "A chronicle of my journeys through the vast world of hackintosh"
+keywords: hackintosh, dortania, mattkc, opencore, thinkpad, macos, x230, laptop
+---
+&emsp;It has been a while since I last posted, and it's mainly been because I was working on my trusty thinkpad x230, turning it into a valid Apple-recognized 13" macbook through a process known as hackintoshing. It is very fun, but also incredibly time-consuming, which is why I haven't really been saying much recently. The process I took to hackintosh my laptop was also a lot easier than what other people would have to do because someone already hackintoshed a thinkpad x230, and posted the necessary files on github, but since I modified the files to add a bit more functionality, I also uploaded my modified files to a <a href="https://github.com/ZirconiaCubed3v2/Thinkpad-X230-Hackintosh">github repo</a> so if you want to do the same stuff, you don't need to go through all the tweaking I did.  
+  
+&emsp;Ever since I watched <a href="https://www.youtube.com/watch?v=S15FVwbHEqo">a video of MattKC's</a> about hackintoshing a Microsoft Surface, I wanted to try it on my old thinkpad. First, I used Matt's recommendation, <a href="https://dortania.github.io/OpenCore-Install-Guide/">Dortania's OpenCore Guide</a>, to try and build my own EFI folder from scratch, gathering kexts (Kernel Extensions) and drivers for my specific system. After I created the recovery flash drive to install MacOS Big Sur (which I realized then, is actually pretty old and as of writing this, not fully supported by Apple anymore), as it was the newest version I could get to work on my hardware. It was MacOS Big Sur 11.7 specifically. I had problems with the default OpenCore boot selector, though, and couldn't continue. I thought it was the end of my very short hackintosh journey, but then I found the (sort of) Holy Grail.  
+  
+&emsp;When Matt hackintoshed his Surface, he found a pre-compiled EFI folder that was created by someone who knew what they were doing, and just used that. So I thought, surely _someone_ out there has tried hackintoshing this model of laptop before, right? Sure enough, I searched on github, and found <a href="https://github.com/banhbaoxamlan/X230-Hackintosh">this repo</a>, which provided a complete EFI folder for the disk, and the installer flash drive, and a disassembled ACPI, which I didn't really use, but was nice to have if I needed it. It worked like a charm, providing a macbook-like boot screen, and even trackpad support, which I couldn't get working myself. But this wasn't the end, there were a few more problems.  
+  
+&emsp;The problems were, even though the kexts for bluetooth and wifi were included in the EFI folder, they did not function properly. I have no idea why, they seemed to match what Dortania wrote to get wifi and bluetooth working, but they just didn't work. I replaced AirportItlwm with the old generic Itlwm driver, and installed the HeliPort app on MacOS to interface with the driver, and after I did that, bluetooth also started working. I also added a serial number and ROM so I could connect my laptop to icloud services like Apple Music as a valid Apple device.  
+  
+&emsp;That's it! My hackintosh experience was definitely a lot easier than usual, due to Banhbaoxamlan's repo, but I did still have to do some things. I had to reinstall MacOS several times to get everything to work properly, but in the end, I had a perfectly cromulent daily driver. I am thinking about upgrading the ram, because 8gb is a little straining for MacOS, especially since it uses about 4gb when idle. Remember to check out MattKC's video, which explains this stuff with a lot more detail, and if you want to try hackintoshing, just please, _please_, know what you're getting into beforehand.
+&nbsp;  
+&nbsp;  
+
+Fuck you Apple,    
+<img src="https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/main/_images/sig.png?raw=true" alt="signature" style="width:250px;"/>
