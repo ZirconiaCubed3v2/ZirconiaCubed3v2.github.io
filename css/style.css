@@ -1,12 +1,7 @@
-html {
-	margin: 0px;
-	width: 100vw;
-}
 body {
   background-color: #030303;
   font-family: 'Cousine', monospace;
   font-weight: bold;
-  width: 100vw;
 }
 p {
   color: #26ff58;
