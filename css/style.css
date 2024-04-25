@@ -164,7 +164,7 @@ a {
 }
 @media (min-width: 693px) and (max-width: 815px) {
   .mainnav {
-    display: block;
+    display: flex;
     align-items: center;
     margin-left: auto;
     background-color: #303030;
