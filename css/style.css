@@ -1,8 +1,3 @@
-html {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 body {
   background-color: #030303;
   font-family: 'Cousine', monospace;
@@ -176,7 +171,7 @@ a {
     margin: 0px;
   }
   .mainnav a {
-    display: block;
+    display: flex;
     color: #268bd2;
     text-align: center;
     padding: 3px 16px;
@@ -218,7 +213,7 @@ a {
     margin: 0px;
   }
   .mainnav a {
-    display: block;
+    display: flex;
     color: #268bd2;
     text-align: center;
     padding: 3px 16px;
@@ -260,7 +255,7 @@ a {
     margin: 0px;
   }
   .mainnav a {
-    display: block;
+    display: flex;
     color: #268bd2;
     text-align: center;
     padding: 3px 16px;
@@ -302,7 +297,7 @@ a {
     margin: 0px;
   }
   .mainnav a {
-    display: block;
+    display: flex;
     color: #268bd2;
     text-align: center;
     padding: 3px 16px;
@@ -344,7 +339,7 @@ a {
     margin: 0px;
   }
   .mainnav a {
-    display: block;
+    display: flex;
     color: #268bd2;
     text-align: center;
     padding: 3px 16px;
