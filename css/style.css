@@ -412,8 +412,7 @@ a {
   margin-top: 0.5em;
 }
 #paginator {
-  display: block;
-  position: relative;
+  display: flex;
   padding: 10px;
   background-color: #111111;
   color: #268bd2;
