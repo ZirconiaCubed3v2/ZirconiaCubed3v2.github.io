@@ -10,5 +10,5 @@ keywords: the zirconiac, return, zirconiac, summer
 &nbsp;  
 &nbsp;  
 
-More to come,
+More to come,    
 <img src="https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/main/_images/sig.png?raw=true" alt="signature" style="width:250px;"/>
