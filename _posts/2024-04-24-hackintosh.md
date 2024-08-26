@@ -18,10 +18,3 @@ keywords: hackintosh, dortania, mattkc, opencore, thinkpad, macos, x230, laptop
 
 Fuck you Apple,    
 <img src="https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/main/_images/sig.png?raw=true" alt="signature" style="width:250px;"/>
-  
-  
-  
-  
-  
-  
-
