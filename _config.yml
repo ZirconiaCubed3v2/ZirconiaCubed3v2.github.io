@@ -1,5 +1,5 @@
 name: "The Zirconiac Speaks"
-author: "The Zirconiac"
+author: "The\ Zirconiac"
 description: "A blog for The Zirconiac that talks about a lot of things, but mostly electronics."
 url: "http://zirconiacubed3v2.github.io"
 plugins:
