@@ -85,7 +85,8 @@ a {
 }
 #paginator {
   display: block;
-  position: relative;
+  position: fixed;
+  bottom: 90px;
   padding: 10px;
   background-color: #000000;
   color: #268bd2;
@@ -95,4 +96,26 @@ a {
 #paginator #blanked {
   display: inline;
   color: #839496;
+}
+
+@media screen and (max-width: 690px) {
+  .mainnav {
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    background-color: #303030;
+    margin: 0px
+  }
+  .footer {
+    background-color: #303030;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+  }
+  #paginator {
+    bottom: auto;
+    position: relative;
+  }
 }
