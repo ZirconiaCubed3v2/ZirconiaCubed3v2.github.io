@@ -6,7 +6,7 @@ keywords: tech news, the zirconiac
 ---
 &emsp;As is evident by the dates of my posts, I don't actually write said posts very often. And I would like to change that. So, I am changing how I do these. Once a week, I will be doing a 'news' article, talking about interesting tech news and things that people should know about, such as the exploding 9800X3Ds.  
 
-&emsp;That's it, I'm done tallking now. The first news post will be on friday of this week (12/13, or 13/12 for you british folk).  
+&emsp;That's it, I'm done talking now. The first news post will be on friday of this week (12/13, or 13/12 for you british folk).
 &nbsp;  
 &nbsp;  
 
