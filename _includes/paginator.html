@@ -4,15 +4,15 @@
 <div id="paginator">
 {% if paginator.next_page or paginator.previous_page %}
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" id="button">Previous page</a>
+    <a href="{{ paginator.previous_page_path }}" id="button" class="noselect">Previous page</a>
   {% else %}
-    <div id="blanked">Previous page</div>
+    <div id="blanked" class="noselect">Previous page</div>
   {% endif %}
-  <div id="blanked">|</div>
+  <div id="blanked" class="noselect">|</div>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" id="button">Next page</a>
+    <a href="{{ paginator.next_page_path }}" id="button" class="noselect">Next page</a>
   {% else %}
-    <div id="blanked">Next page</div>
+    <div id="blanked" class="noselect">Next page</div>
   {% endif %}
 {% endif %}
 </div>
