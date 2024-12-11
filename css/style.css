@@ -99,6 +99,13 @@ a {
 #paginator #blanked {
   display: inline;
   color: #839496;
+  padding: 10px;
+}
+#paginator #button {
+  padding: 10px;
+}
+#paginator #button:hover {
+  background-color: #555555;
 }
 
 @media screen and (max-width: 690px) {
