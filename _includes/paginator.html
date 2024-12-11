@@ -4,13 +4,13 @@
 <div id="paginator">
 {% if paginator.next_page or paginator.previous_page %}
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}">Previous page</a>
+    <a href="{{ paginator.previous_page_path }}" id="button">Previous page</a>
   {% else %}
     <div id="blanked">Previous page</div>
   {% endif %}
   <div id="blanked">|</div>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}">Next page</a>
+    <a href="{{ paginator.next_page_path }}" id="button">Next page</a>
   {% else %}
     <div id="blanked">Next page</div>
   {% endif %}
