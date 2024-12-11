@@ -1,18 +1,18 @@
 <head>
   <link rel="stylesheet" type="text/css" href="/css/style.css"
 </head>
-<div id="paginator">
+<div id="paginator" class="noselect">
 {% if paginator.next_page or paginator.previous_page %}
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" id="button" class="noselect">Previous page</a>
+    <a href="{{ paginator.previous_page_path }}" id="button">Previous page</a>
   {% else %}
-    <div id="blanked" class="noselect">Previous page</div>
+    <div id="blanked">Previous page</div>
   {% endif %}
-  <div id="blanked" class="noselect">|</div>
+  <div id="blanked">|</div>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" id="button" class="noselect">Next page</a>
+    <a href="{{ paginator.next_page_path }}" id="button">Next page</a>
   {% else %}
-    <div id="blanked" class="noselect">Next page</div>
+    <div id="blanked">Next page</div>
   {% endif %}
 {% endif %}
 </div>
