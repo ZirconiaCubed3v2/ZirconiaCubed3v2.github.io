@@ -12,7 +12,9 @@ a {
   color: #268bd2;
   text-decoration: none;
 }
-
+.card {
+  padding-inline: 5px;
+}
 .footer {
   background-color: #303030;
   padding: 10px;
@@ -118,5 +120,14 @@ a {
   #paginator {
     bottom: auto;
     position: relative;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #cardtitle {
+    font-size: 30px;
+  }
+  #description {
+    font-size: 18px
   }
 }
