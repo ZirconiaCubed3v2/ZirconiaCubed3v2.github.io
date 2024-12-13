@@ -1,1 +1,60 @@
+@font-face {
+    font-family: Chicago;
+    src: url(/fonts/ChicagoFLF.ttf)
+}
 
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #808080;
+}
+
+#window {
+    display: block;
+    background-color: #FFFFFF;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 200px;
+    border: 1px solid #000000;
+}
+#window h1 {
+    padding-top: 5px;
+    margin: 0px;
+    text-align: center;
+    vertical-align: center;
+    font-size: 20px;
+    font-family: Chicago;
+    font-weight: 1;
+}
+#window p {
+    padding-left: 10px;'
+}
+#window-header-bottom-line {
+    border: none;
+    height: 1px;
+    background-color: #000000;
+}
+
+.mainnav {
+  font-family: Chicago;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #000000;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px
+}
+.mainnav a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 40px;
+}
+.mainnav a:active {
+  background-color: #000000;
+}
