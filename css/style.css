@@ -129,13 +129,20 @@ a {
     position: relative;
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-height: 900px) {
+  .footer {
+    background-color: #303030;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+  }
   #paginator {
     bottom: auto;
-    position:relative;
+    position: relative;
   }
 }
-
 @media screen and (min-width: 1100px) {
   #cardtitle {
     font-size: 30px;
