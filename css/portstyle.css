@@ -9,7 +9,7 @@ body {
     background-color: #808080;
 }
 
-.window {
+#window {
     display: block;
     background-color: #FFFFFF;
     position: fixed;
@@ -20,7 +20,7 @@ body {
     width: 300px;
     border-radius: 2px;
 }
-.window-header {
+#window-header {
     -moz-border-radius: 0px;
     -webkit-border-radius: 2px 2px 0px 0px;
     border-radius: 2px 2px 0px 0px;
@@ -28,18 +28,18 @@ body {
     text-align: justify;
     text-align-last: center;
 }
-.window-header-inline {
+#window-header-inline {
     margin: 0px;
     padding: 0px;
     display: inline-block;
     margin-bottom: 5px;
     width: 37.2%;
 }
-.window-header-inline hr {
+#window-header-inline hr {
     margin: 3%;
     margin-bottom: 0px;
 }
-.window-header-text {
+#window-header-text {
     display: inline-block;
     padding-top: 5px;
     padding-bottom: 0px;
@@ -50,14 +50,14 @@ body {
     font-family: Chicago;
     font-weight: 1;
 }
-.window-text {
+#window-text {
     padding-left: 13px;
     padding-top: 10px;
     padding-right: 13px;
     margin: 0px;
     font-family: Chicago;
 }
-.window-header-bottom-line {
+#window-header-bottom-line {
     margin: 0px;
     border: none;
     height: 1px;
