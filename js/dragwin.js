@@ -1,10 +1,10 @@
-dragElement(document.getElementByClassName("notepad-1"));
+dragElement(document.getElementById("notepad-1"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.class + "-header")) {
+  if (document.getElementById(elmnt.id + "-header")) {
     // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.class + "-header").onmousedown = dragMouseDown;
+    document.getElementById(elmnt.id + "-header").onmousedown = dragMouseDown;
   } else {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
