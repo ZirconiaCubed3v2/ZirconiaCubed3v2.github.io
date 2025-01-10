@@ -1,0 +1,22 @@
+---
+title: "CES 2025 NEWWWSSSS"
+date: 2025-1-10
+description: "There is so much news from CES this year"
+keywords: ces, the zirconiac, nvidia, monitor, 2025
+---
+# CES 2025 BABYYYYY
+&emsp;There was so much news here at CES this year, so I just think I would follow up on my promise of news (that I didn't really keep) and compile what I think is some of the most important things there.  
+## New Nvidia GPUs
+&emsp;Nvidia announced some of the new 50-series GPUs, the 5090, 5080, 5070 ti, and 5070. They have better "AI TOPS" performance than the last generation, althought they are cheaper than their counterparts, except for the 5090, which has risen to a whopping $1,999USD.  
+&emsp;Notable features of the new lineup are the 5090's 24GB of blazing fast GDDR7, and the 5070's supposed "4090 performance", for only $549. 50-series cards also have a new feature called "multi-frame generation", which allows AI generation of frames for higher frame rates at the cost of quality and latency.  
+## Monitors!!!
+&emsp;Huge updates in monitor technology, with companies like LG and ASUS releasing some crazy monitors.  
+&emsp;Some notable ones are the LG UltraGear 45GX990A, which has a native resolution of 5120x2160@165, or another mode running at 2560x1080@330, and MSI's MPG 272QR QD-OLED X50, which runs at 2560x1440@500.  
+&emsp;DisplayPort also released the new 2.1b standard, allowing for display throughputs of 80gbps, allowing for these insane refresh rates.  
+
+CES is so cool every year, with so many new technologies being introduced, and the previous limits broken. I love it. I hope I can be able to go someday (it's expensive).
+&nbsp;  
+&nbsp;  
+
+Hoping for another awesome year of tech and shenaniganizing,  
+<img src="https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/main/_images/sig.png?raw=true" alt="signature" style="width:250px;"/>
