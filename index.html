@@ -7,8 +7,9 @@ layout: default
   <meta name="keywords" content="home, zirconiac, blog">
   <meta name="author" content={{ site.author }}>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - {{ site.name }}</title>
 </head>
-<title>Home - {{ site.name }}</title>
+<body>
 <div class="cards">
   {% for post in paginator.posts %}
   <a href="{{ post.url }}">
@@ -22,3 +23,4 @@ layout: default
 </div>
 <br>
 {% include paginator.html %}
+</body>
