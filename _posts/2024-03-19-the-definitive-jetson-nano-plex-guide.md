@@ -4,7 +4,7 @@ date: 2024-3-19
 description: "I posted about putting plex on a jetson nano a while ago, so here's an actual description of the setup"
 keywords: jetson, nano, plex, guide, server, nvidia, armbian
 ---
-<img src="https://raw.githubusercontent.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/refs/heads/main/_images/2024-03-19-plex-jetson.png" alt="the plex logo above a jetson nano" width="40%" style="align:center;">  
+<img src="https://raw.githubusercontent.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/refs/heads/main/_images/2024-03-19-plex-jetson.png" alt="the plex logo above a jetson nano" style="margin-left:auto;margin-right:auto;width:40%;">  
   
 A while ago (more than a month to be more exact), I said I was working on a jetson nano plex server. If you don't know what a jetson nano is, it's basically nvidia's go at a raspberry pi clone, but of course, they threw a gpu in it, so it's better than raspberry pi's at video transcoding and AI acceleration. For some reason, they stopped production on the carrier board, which is what makes is usable for most non-embedded applications. The carrier board adds usb ports, video output, and ports for power, and an M.2 slot (which will come in handy later).  
   
