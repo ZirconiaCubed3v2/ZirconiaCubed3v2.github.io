@@ -4,7 +4,8 @@ date: 2024-3-19
 description: "I posted about putting plex on a jetson nano a while ago, so here's an actual description of the setup"
 keywords: jetson, nano, plex, guide, server, nvidia, armbian
 ---
-<img src="https://raw.githubusercontent.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/refs/heads/main/_images/2024-03-19-plex-jetson.png" alt="the plex logo above a jetson nano" width="40%">
+<img src="https://raw.githubusercontent.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/refs/heads/main/_images/2024-03-19-plex-jetson.png" alt="the plex logo above a jetson nano" width="40%" style="align:center;">  
+  
 A while ago (more than a month to be more exact), I said I was working on a jetson nano plex server. If you don't know what a jetson nano is, it's basically nvidia's go at a raspberry pi clone, but of course, they threw a gpu in it, so it's better than raspberry pi's at video transcoding and AI acceleration. For some reason, they stopped production on the carrier board, which is what makes is usable for most non-embedded applications. The carrier board adds usb ports, video output, and ports for power, and an M.2 slot (which will come in handy later).  
   
 I originally wanted to use the ubuntu image nvidia provides, which comes with the jetpack sdk, so it has the custom kernel with support for the gpu (which is a Tegra-X1) and drivers, and tensorflow libraries that were specifically built with cuda support for the gpu. Unfortunately, the version of ubuntu they ship is based on 18.04 Bionic Beaver, which is an LTS version, but I had so much trouble getting it to work. Mainly because some of the libraries required for things to work were way too old, like libc. Libc was a really big problem. So, I switched to Armbian.  
