@@ -82,8 +82,8 @@ a {
   font-size: 25pt;
 }
 #postbody {
-  margin-left:10%;
-  margin-right:10%;
+  margin-left:0%;
+  margin-right:0%;
   word-wrap:break-word;
   padding:10px;
   line-height:150%;
