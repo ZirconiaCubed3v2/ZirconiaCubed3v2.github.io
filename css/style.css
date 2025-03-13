@@ -88,6 +88,10 @@ a {
   padding:10px;
   line-height:150%;
 }
+#postbody blockquote {
+  padding-left: 15px;
+  border-left: 3px solid #5a6667;
+}
 #interpostimage {
   display:block;
   margin-left:auto;
