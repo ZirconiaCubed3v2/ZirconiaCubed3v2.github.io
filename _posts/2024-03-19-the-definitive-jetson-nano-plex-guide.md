@@ -15,7 +15,7 @@ A while ago (more than a month to be more exact), I said I was working on a Jets
 I originally wanted to use the pre-built Ubuntu image Nvidia provides, which comes with the Jetpack SDK (used for developing GPU-specific applications), so it has the custom kernel with propreitary drivers for the GPU (which is a Tegra-X1), and TensorFlow libraries that were specifically built with CUDA support for the GPU. Unfortunately, the version of Ubuntu they provide is based on 18.04 Bionic Beaver, which is an LTS version, but I had so much trouble getting it to work, mainly because some of the libraries required for things to work were way too old, like libc. Libc was a really big problem. So, I switched to Armbian.  
   
 <br>
-<h2 id="heading">Armbian to thhe Rescue!</h2>
+<h2 id="heading">Armbian to the Rescue!</h2>
 Armbian is an open-source version of debian made for ARM-based devices. There's community support for the Jetson Nano, but strangely, the latest Bookworm image simply didn't work. I could not get it to boot at all whatsoever. So, I got the next latest working image, the Bullseye one, and ran through the Bullseye->Bookworm upgrade process. That worked pretty well, but I couldn't upgrade the kernel because it wouldn't build properly, but that's fine, I didn't really need the latest kernel for something like this. The only problem I had with Armbian is that no matter what I do, it never recognized the thermal zones, so I was never able to measure the temps. And, Plex doesn't recognize the Nvidia GPU, so it's not actually used for the transcoding. Yes that defeats the whole purpose of using a Jetson over a Pi, but I was already too deep into the project to turn back.  
   
   
