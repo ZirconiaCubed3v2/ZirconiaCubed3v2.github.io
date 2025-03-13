@@ -62,7 +62,7 @@ a {
 }
 #heading {
   color: #268bd2;
-  line-height: 10%;
+  margin-bottom: -11px;
 }
 #description {
   color: #26ff58;
