@@ -7,7 +7,9 @@ keywords: mozilla, firefox, tos, privacy
 <h2 id="heading">Firefox is Now the Worst Browser Ever</h2>
 As of February 25th, 2025, this sentence has been added to the Firefox TOS: 
 <div id="blockquote">
-> "When you upload or input information through Firefox, you hereby grant us a nonexclusive, royalty-free, worldwide license to use that information to help you navigate, experience, and interact with online content as you indicate with your use of Firefox."
+  
+> "When you upload or input information through Firefox, you hereby grant us a nonexclusive, royalty-free, worldwide license to use that information to help you navigate, experience, and interact with online content as you indicate with your use of Firefox."  
+  
 </div>
   
 They also removed the part about not sharing data from their Terms of Use, which means they will almost certainly share your data. All the time. To everyone.  
