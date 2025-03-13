@@ -79,6 +79,14 @@ a {
   font-family: 'Cousine', monospace;
   font-weight: bold;
 }
+#postbody {
+  margin-left:25%;
+  margin-right:25%;
+  word-wrap:break-word;
+  padding:30px;
+  line-height:150%;
+  border:1px solid #1f1f1f;
+}
 #date {
   color: #839496;
   font-family: 'Cousine', monospace;
