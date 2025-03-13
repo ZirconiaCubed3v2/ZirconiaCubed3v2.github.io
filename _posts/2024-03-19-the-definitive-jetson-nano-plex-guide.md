@@ -21,7 +21,8 @@ Armbian is an open-source version of debian made for ARM-based devices. There's 
   
 With Armbian working (mostly), I installed Plex through the normal linux install process with the APT repository, and it was a breeze. Then when it came to storage, I got a WD Black 2TB NVMe, and plugged it into one of the USB3.0 ports with a USB-C enclosure. It didn't even occur to me that I could've just bought a different form factor and used the M.2 slot on the board, which also probably would've been faster. But, it was too late for that, I had already bought it.  
   
-  
+   
+<h2 id="heading">My Conclusions</h2>
 And, that's basically it! That is the entire process I went through to get a Plex media server running on my jetson nano. It took a ridiculous amount of time to get it working, as anything does on one of those infernal little computers. But I did learn a lot about how Plex works and some more about the internal workings of Linux and the kernel. If you want to learn how to troubleshoot a project, I strongly recommend you try to do something like this. If not, maybe just follow another guide on a Raspberry Pi or an equivalent something.
 &nbsp;  
 &nbsp;  
