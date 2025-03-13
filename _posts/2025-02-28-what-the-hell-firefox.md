@@ -6,13 +6,17 @@ keywords: mozilla, firefox, tos, privacy
 ---
 <h2 id="heading">Firefox is Now the Worst Browser Ever</h2>
 As of February 25th, 2025, this sentence has been added to the Firefox TOS: 
-> "When you upload or input information through Firefox, you hereby grant us a nonexclusive, royalty-free, worldwide license to use that information to help you navigate, experience, and interact with online content as you indicate with your use of Firefox."  
+<div id="blockquote">
+> "When you upload or input information through Firefox, you hereby grant us a nonexclusive, royalty-free, worldwide license to use that information to help you navigate, experience, and interact with online content as you indicate with your use of Firefox."
+</div>
   
 They also removed the part about not sharing data from their Terms of Use, which means they will almost certainly share your data. All the time. To everyone.  
 <br>
 <h2 id="heading">The Downfall</h2>
 Firefox used to be my most used browser because I run various versions of Linux on all my home computers, but now I apparently have to find something else to use, and I urge you to as well if you also used Firefox. I find it ridiculous that they force a _royalty-free_ license on every little bit of data that gets put into Firefox (yes i would be fine with a royalty license, i like money too). As user *crlsktr* on the Mozilla Discourse forums put so eloquently, 
+<div id="blockquote">
 > "I see this as a camera manufacturer claiming a license for the pictures I took with their camera. How I use the browser should not be the business of Mozilla."
+</div>
   
 This sums up the situation perfectly.  
 If you need some alternate browsers for Linux, I personally use <a href="https://github.com/ungoogled-software/ungoogled-chromium" target="_blank" rel="noopener noreferrer">ungoogled-chromium</a>, which is a version of chromium that has been, as you can expect, de-googled. But it still runs the chromium framework, so services like Grafana still support it.  
