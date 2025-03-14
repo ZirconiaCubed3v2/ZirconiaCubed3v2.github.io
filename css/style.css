@@ -13,8 +13,37 @@ a {
   text-decoration: none;
 }
 .card {
+  padding-top: 15px;
+  padding-bottom: 10px;
   padding-inline: 5px;
   border-radius: 3px;
+  display: flex;
+  align-items: flex-start;
+}
+.cardpic {
+  max-width: 150px;
+  align-items: center;
+  justify-content: center;
+}
+.cardpic img {
+  display: block;
+  width: 150px;
+  height: auto;
+  vertical-align: top;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.cardtext {
+  padding: 10px;
+  flex-grow: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  min-width: 0;
+}
+.cardtext h2 {
+  margin-top: 5px;
 }
 .footer {
   background-color: #303030;
