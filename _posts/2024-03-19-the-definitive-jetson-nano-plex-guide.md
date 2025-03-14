@@ -3,6 +3,7 @@ title: "The Definitive Jetson Nano Plex Guide"
 date: 2024-3-19
 description: "I posted about putting plex on a jetson nano a while ago, so here's an actual description of the setup"
 keywords: jetson, nano, plex, guide, server, nvidia, armbian
+thumbnail: https://raw.githubusercontent.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/refs/heads/main/_images/2024-03-19-plex-jetson.png
 ---
 <img id="interpostimage" src="https://raw.githubusercontent.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/refs/heads/main/_images/2024-03-19-plex-jetson.png" alt="the plex logo above a jetson nano">  
 
