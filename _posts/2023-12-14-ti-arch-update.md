@@ -3,6 +3,7 @@ title: "TI Arch Update"
 date: 2023-12-14
 description: "migrated from the hugo cesspool"
 keywords: ti-nspire, arch, linux, tinspire, nspire
+thumbnail: data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=
 ---
 (reuploaded from the hugo cesspool)
 <br>
