@@ -3,6 +3,7 @@ title: "HACKINTOSH!!!"
 date: 2024-04-24
 description: "A chronicle of my journeys through the vast world of hackintosh"
 keywords: hackintosh, dortania, mattkc, opencore, thinkpad, macos, x230, laptop
+thumbnail: data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=
 ---
 &emsp;It has been a while since I last posted, and it's mainly been because I was working on my trusty thinkpad x230, turning it into a valid Apple-recognized 13" macbook through a process known as hackintoshing. It is very fun, but also incredibly time-consuming, which is why I haven't really been saying much recently. The process I took to hackintosh my laptop was also a lot easier than what other people would have to do because someone already hackintoshed a thinkpad x230, and posted the necessary files on github, but since I modified the files to add a bit more functionality, I also uploaded my modified files to a <a href="https://github.com/ZirconiaCubed3v2/Thinkpad-X230-Hackintosh" target="_blank" rel="noopener noreferrer">github repo</a> so if you want to do the same stuff, you don't need to go through all the tweaking I did.  
   
