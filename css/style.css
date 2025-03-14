@@ -20,12 +20,12 @@ a {
   display: flex;
   align-items: flex-start;
 }
-.cardpic {
+#cardpic {
   max-width: 150px;
   align-items: center;
   justify-content: center;
 }
-.cardpic img {
+#cardpic img {
   display: block;
   width: 150px;
   height: auto;
@@ -34,7 +34,7 @@ a {
   object-fit: cover;
   border-radius: 3px;
 }
-.cardtext {
+#cardtext {
   padding: 10px;
   flex-grow: 1;
   word-wrap: break-word;
@@ -42,7 +42,7 @@ a {
   white-space: normal;
   min-width: 0;
 }
-.cardtext h2 {
+#cardtext h2 {
   margin-top: 5px;
 }
 .footer {
