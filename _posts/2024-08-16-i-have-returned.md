@@ -3,6 +3,7 @@ title: "I Have Returned!"
 date: 2024-08-16
 description: "From the depths, I rise again!"
 keywords: the zirconiac, return, zirconiac, summer
+thumbnail: data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=
 ---
 &emsp;So. It's been a while. I had to put this whole thing on hold for summer, but I'm back now, and I did a lot of stuff, so I have some things lined up to post about.  
   
