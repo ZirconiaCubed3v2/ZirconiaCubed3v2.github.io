@@ -3,6 +3,7 @@ title: "What the Hell, Mozilla?"
 date: 2025-2-28
 description: "Congrats Mozilla, you ruined my favorite browser"
 keywords: mozilla, firefox, tos, privacy
+thumbnail: data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=
 ---
 <h2 id="heading">Firefox is Now the Worst Browser Ever</h2>
 As of February 25th, 2025, this sentence has been added to the Firefox TOS: 
