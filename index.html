@@ -6,9 +6,14 @@ layout: default
   {% for post in paginator.posts %}
   <a href="{{ post.url }}">
     <div class="card">
-      <h2 id="cardtitle" style="margin-bottom: 0.1em">{{ post.title }}</h2>
-      <p id="date">// {{ post.date | date_to_string }}</p>
-      <p id="description">{{ post.description }}</p>
+      <div id="cardpic">
+        <img src="{{ post.thumbnail }}" alt="post thumbnail">
+      </div>
+      <div id="cardtext">
+        <h2 id="cardtitle" style="margin-bottom: 0.1em">{{ post.title }}</h2>
+        <p id="date">// {{ post.date | date_to_string }}</p>
+        <p id="description">{{ post.description }}</p>
+      </div>
     </div>
   </a>
   {% endfor %}
