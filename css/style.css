@@ -48,7 +48,7 @@ a {
 }
 @keyframes slide-in {
   from {
-    translate: 0 20vh;
+    translate: 0 40vh;
     scale: 110% 1;
   }
 
@@ -67,7 +67,7 @@ a {
   width: 600px;
   height: auto;
   text-align: center;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-name: slide-in;
 }
 #aboutmecard p {
