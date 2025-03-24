@@ -71,6 +71,13 @@ a {
   animation-duration: 1s;
   animation-name: slide-in;
 }
+#aboutmecardpc ul li a {
+  border-radius: 3px;
+  background-color: rgba(128, 0, 128, 1);
+  padding: 3px;
+  margin: auto;
+  width: 100%;
+}
 #aboutmecard h1 {
   margin-bottom: 5px;
 }
