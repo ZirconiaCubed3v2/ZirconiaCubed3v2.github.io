@@ -135,7 +135,7 @@ a {
   padding: 10px;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: auto;
   position: fixed;
 }
 
@@ -263,7 +263,7 @@ a {
     padding: 10px;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: auto;
     position: relative;
   }
   #paginator {
@@ -280,7 +280,7 @@ a {
     padding: 10px;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: auto;
     position: relative;
   }
   #paginator {
