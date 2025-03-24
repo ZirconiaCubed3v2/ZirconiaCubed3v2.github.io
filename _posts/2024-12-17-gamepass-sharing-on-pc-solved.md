@@ -3,7 +3,7 @@ title: "Game Pass Sharing on PC: Solved"
 date: 2024-12-17
 description: "I finally figured out Game Pass sharing on Windows 11"
 keywords: gamepass, game pass, windows 11, sharing, the zirconiac
-thumbnail: data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=
+thumbnail: https://raw.githubusercontent.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/refs/heads/main/_images/2024-12-17-gamepass-logo.png
 ---
 Soooo, forgot about the news (like usual) but I have an emergency post for something I finally figured out last night: Game Pass sharing on PC (win11). This has been bugging me for so long, and I never found any solid answers on Microsoft forums or anything. But I have the answer now and would like to share it to other people.  
   
