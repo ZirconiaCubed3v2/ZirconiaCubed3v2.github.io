@@ -46,13 +46,15 @@ a {
 #cardtext h2 {
   margin-top: 5px;
 }
-@keyframes grow-shrink {
-  25%,
-  75% {
-    scale: 100%;
+@keyframes slide-in {
+  from {
+    translate: 0 20vh;
+    scale: 110% 1;
   }
-  50% {
-    scale: 140%;
+
+  to {
+    translate: 0 0;
+    scale: 1 1;
   }
 }
 #aboutmecard {
@@ -65,8 +67,8 @@ a {
   width: 600px;
   height: auto;
   text-align: center;
-  animation-duration: 2s;
-  animation-name: grow-shrink;
+  animation-duration: 0.5s;
+  animation-name: slide-in;
 }
 #aboutmecard p {
   margin-top: 0px;
