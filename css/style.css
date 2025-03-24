@@ -62,12 +62,16 @@ a {
   padding: 20px;
   background-color: #FFFFFF;
   margin: auto;
-  margin-top: 50px;
+  margin-top: -10px;
+  margin-bottom: -10px;
   width: 600px;
   height: auto;
   text-align: center;
   animation-duration: 1s;
   animation-name: slide-in;
+}
+#aboutmecard h1 {
+  margin-bottom: 5px;
 }
 #aboutmecard p {
   margin-top: 0px;
@@ -86,7 +90,7 @@ a {
 }
 #aboutmecard img {
   padding: 10px;
-  width: 89%;
+  width: 60%;
 }
 #aboutmecardpros {
   border-radius: 10px;
