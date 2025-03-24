@@ -2,6 +2,7 @@ body {
   background-color: #030303;
   font-family: 'Cousine', monospace;
   font-weight: bold;
+  overflow: hidden;
 }
 p {
   color: #26ff58;
