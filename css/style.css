@@ -46,6 +46,61 @@ a {
 #cardtext h2 {
   margin-top: 5px;
 }
+#aboutmecard {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  margin: auto;
+  margin-top: 50px;
+  width: 600px;
+  height: auto;
+  text-align: center;
+}
+#aboutmecard p {
+  margin-top: 0px;
+  color: #000000;
+}
+#aboutmecard a {
+  background-color: purple;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 60%;
+  display: block;
+}
+#aboutmecard img {
+  padding: 10px;
+}
+#aboutmecardpros {
+  text-align: left;
+  background: rgba(0,255,0,50);
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  padding-bottom: 38px;
+}
+#aboutmecardcons {
+  text-align: left;
+  background: rgba(255,0,0,50);
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+#aboutmecardpc ul {
+  padding-left: 20px;
+}
+#aboutmecardpc h2 {
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+#aboutmecardcons {
+  display: inline-block;
+  vertical-align: top;
+}
 .footer {
   background-color: #303030;
   padding: 10px;
