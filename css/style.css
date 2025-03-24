@@ -47,6 +47,19 @@ a {
 #cardtext h2 {
   margin-top: 5px;
 }
+#content {
+  animation-duration: 2s;
+  animation-name: delayed-overflow;
+}
+@keyframes delayed-overflow {
+  from {
+    overflow: hidden;
+  }
+
+  to {
+    overflow: visible;
+  }
+}
 @keyframes slide-in {
   from {
     translate: 0 30vh;
