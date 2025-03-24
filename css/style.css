@@ -48,14 +48,12 @@ a {
 }
 @keyframes slide-in {
   from {
-    translate: 0 40vh;
-    scale: 1 1;
+    translate: 0 30vh;
     opacity: 0;
   }
 
   to {
     translate: 0 0;
-    scale: 1 1;
     opacity: 1;
   }
 }
