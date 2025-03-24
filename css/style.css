@@ -241,6 +241,9 @@ a {
     bottom: auto;
     position: relative;
   }
+  #aboutmecard {
+    width: 80%;
+  }
 }
 @media screen and (max-height: 1250px) {
   .footer {
