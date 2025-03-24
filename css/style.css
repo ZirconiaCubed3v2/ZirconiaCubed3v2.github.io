@@ -48,9 +48,8 @@ a {
   margin-top: 5px;
 }
 #content {
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-name: delayed-overflow;
-  overflow: hidden;
 }
 @keyframes delayed-overflow {
   from {
