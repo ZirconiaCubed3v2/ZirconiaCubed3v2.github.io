@@ -48,13 +48,23 @@ layout: default
     position: fixed;
     transform: translateY(-500vh);
   }
-  
   .scrollable-element {
     -ms-overflow-style: none; /* IE and older Edge */
     scrollbar-width: none; /* Firefox */
   }
-
   .scrollable-element::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera, and newer Edge */
+  }
+  #content {
+    animation-duration: 2.5s;
+    animation-name: delayed-overflow;
+  }
+  @keyframes delayed-overflow {
+    from {
+      overflow: hidden;
+    }
+    to {
+      overflow: visible;
+    }
   }
 </style>
