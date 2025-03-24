@@ -27,12 +27,13 @@ a {
 }
 #cardpic img {
   display: block;
-  width: 150px;
+  width: 115px;
   height: auto;
   vertical-align: top;
   max-height: 100%;
   object-fit: cover;
   border-radius: 3px;
+  padding: 10px;
 }
 #cardtext {
   padding: 10px;
