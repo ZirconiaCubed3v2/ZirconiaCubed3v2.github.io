@@ -50,6 +50,7 @@ a {
 #content {
   animation-duration: 2s;
   animation-name: delayed-overflow;
+  overflow: hidden;
 }
 @keyframes delayed-overflow {
   from {
