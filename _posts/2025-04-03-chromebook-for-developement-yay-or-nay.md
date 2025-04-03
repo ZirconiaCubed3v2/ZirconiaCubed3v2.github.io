@@ -31,5 +31,5 @@ The chromebook is a pretty good little device for some light programming and pow
 &nbsp;  
 &nbsp;  
 
-Chromebooks, am I right?
+Chromebooks, am I right?  
 <img src="https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/main/_images/sig.png?raw=true" alt="signature" style="width:250px;"/>
