@@ -9,6 +9,11 @@ p {
   font-family: 'Cousine', monospace;
   font-weight: bold;
 }
+li {
+  color: #26ff58;
+  font-family: 'Cousine', monospace;
+  font-weight: bold;
+}
 a {
   color: #268bd2;
   text-decoration: none;
