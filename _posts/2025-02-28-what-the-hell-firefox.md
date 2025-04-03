@@ -5,9 +5,6 @@ description: "Congrats Mozilla, you ruined my favorite browser"
 keywords: mozilla, firefox, tos, privacy
 thumbnail: https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/raw/refs/heads/main/_images/2025-02-28-firefox-logo.webp
 ---
-<img id="interpostimage" src="https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/raw/refs/heads/main/_images/2025-02-28-firefox-logo.webp" alt="firefox logo">  
-  
-<br>
 <h2 id="heading">Firefox is Now the Worst Browser Ever</h2>
 As of February 25th, 2025, this sentence has been added to the Firefox TOS: 
 > "When you upload or input information through Firefox, you hereby grant us a nonexclusive, royalty-free, worldwide license to use that information to help you navigate, experience, and interact with online content as you indicate with your use of Firefox."  
