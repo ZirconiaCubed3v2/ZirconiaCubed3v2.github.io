@@ -3,7 +3,7 @@ title: "Chromebook for Development: Yay or Nay?"
 date: 2025-3-4
 description: "I tried using an underpowered chromebook for developement and it kinda worked"
 keywords: chromebook, developement, chromeos, dev mode, chromebrew, crew, crosh, sh1mboot, sh1mmer, rma, shim
-thumbnail: data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=
+thumbnail: https://raw.githubusercontent.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/refs/heads/main/_images/2025-04-03-chromebrew-logo.png
 ---
 <h2 id="heading">Should You Use a Chromebook for Developement?</h2>
 Well, that's what we all want to know, isn't it? Can a computer that retails for $320 brand-new and runs the abomination that is chromeos be good for programming? Well, I can say that after using it for just that for a while, it isn't too bad and can be a good buy in a pinch. In this post, I'll talk about the chromebook I bought, and how I made it useable for a power user.  
