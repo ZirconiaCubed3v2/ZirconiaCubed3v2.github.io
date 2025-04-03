@@ -8,6 +8,7 @@ thumbnail: data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=
 <h2 id="heading">Should You Use a Chromebook for Developement?</h2>
 Well, that's what we all want to know, isn't it? Can a computer that retails for $320 brand-new and runs the abomination that is chromeos be good for programming? Well, I can say that after using it for just that for a while, it isn't too bad and can be a good buy in a pinch. In this post, I'll talk about the chromebook I bought, and how I made it useable for a power user.  
   
+<br>
 <h3 id="heading">The Chromebook in Question</h3>
 First, let's talk about what chromebook I got. After looking for a while, I found an Acer C734 for $320, and I chose it because I think it provides a good overview of the lower-end chromebooks. Here's the hard specs for those nerds who want to know:  
 - Intel(R) Celeron(R) N4500 @ 1.10GHz (2 threads, 2.80GHz)
