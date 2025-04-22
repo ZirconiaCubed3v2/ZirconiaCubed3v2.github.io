@@ -10,7 +10,8 @@ imageTrack.addEventListener('mousedown', (e) => {
     isDragging = true;
     startX = e.pageX - imageTrack.offsetLeft;
     scrollLeft = imageTrack.scrollLeft;
-    imageTrack.classList.add('dragging'); // Optional: Add a visual cue during dragging
+    imageTrack.classList.add('dragging');
+    e.preventDefault(); // Prevent the browser's default drag behavior on images
 });
 
 imageTrack.addEventListener('mouseleave', () => {
@@ -24,14 +25,13 @@ imageTrack.addEventListener('mouseup', () => {
 });
 
 imageTrack.addEventListener('mousemove', (e) => {
-    if (!isDragging) return; // Stop if not dragging
-    e.preventDefault(); // Prevent text selection during drag
+    if (!isDragging) return;
     const x = e.pageX - imageTrack.offsetLeft;
-    const walk = (x - startX) * 1; // Adjust scroll speed as needed
+    const walk = (x - startX) * 1;
     imageTrack.scrollLeft = scrollLeft - walk;
 });
 
-// Zoom functionality
+// Zoom functionality (remains the same)
 images.forEach(img => {
     img.addEventListener('click', () => {
         const zoomedDiv = document.createElement('div');
@@ -45,7 +45,6 @@ images.forEach(img => {
         zoomedDiv.appendChild(zoomedImage);
         document.body.appendChild(zoomedDiv);
 
-        // Close the zoomed view on click
         zoomedDiv.addEventListener('click', () => {
             document.body.removeChild(zoomedDiv);
         });
