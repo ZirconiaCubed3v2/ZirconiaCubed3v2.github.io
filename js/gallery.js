@@ -1,51 +1,51 @@
 const galleryContainer = document.querySelector('.gallery-container');
 const imageTrack = document.querySelector('.image-track');
-const images = Array.from(imageTrack.children); // Get a live array of image elements
-const imageWidth = images[0].offsetWidth + parseInt(window.getComputedStyle(images[0]).marginRight) || 0; // Get width + margin
+const images = Array.from(imageTrack.children);
+const originalImageCount = images.length / 2; // Assuming we duplicated once
+const imageWidth = images[0].offsetWidth + parseInt(window.getComputedStyle(images[0]).marginRight) || 0;
 let isDragging = false;
 let startXViewport;
 let initialClickX;
-let loopEnabled = true; // Control the looping behavior
+let loopEnabled = true;
 let firstSetWidth;
 
 function setupLoop() {
-    if (!loopEnabled || images.length === 0) return;
+    if (!loopEnabled || images.length > originalImageCount) return; // Only duplicate once
 
-    // Duplicate the images at the end
-    images.forEach(img => {
+    const originalImages = images.slice(); // Create a copy of the original set
+    originalImages.forEach(img => {
         const duplicate = img.cloneNode(true);
         imageTrack.appendChild(duplicate);
     });
 
-    firstSetWidth = images.length * imageWidth; // Width of the original set
-    imageTrack.style.width = (images.length * 2) * imageWidth + 'px'; // Set wider track width
+    firstSetWidth = originalImageCount * imageWidth;
+    imageTrack.style.width = (originalImageCount * 2) * imageWidth + 'px';
 }
 
 function loopGallery() {
-    if (!loopEnabled || !isDragging || images.length === 0 || !firstSetWidth) return;
+    if (!loopEnabled || !isDragging || images.length <= originalImageCount || !firstSetWidth) return;
 
     const currentTranslateX = parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
 
     // Looping when reaching the end of the first set (scrolling right)
-    if (currentTranslateX < -firstSetWidth) {
-        imageTrack.style.transition = 'none'; // Disable transition for instant shift
+    if (currentTranslateX < -firstSetWidth + 1) { // Added a small threshold
+        imageTrack.style.transition = 'none';
         imageTrack.style.transform = `translateX(${currentTranslateX + firstSetWidth}px)`;
-        requestAnimationFrame(() => { // Ensure the DOM has updated before re-enabling transition
+        requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
     }
 
     // Looping when reaching the beginning of the first set (scrolling left)
-    if (currentTranslateX > 0) {
-        imageTrack.style.transition = 'none'; // Disable transition for instant shift
+    if (currentTranslateX > 1) { // Added a small threshold
+        imageTrack.style.transition = 'none';
         imageTrack.style.transform = `translateX(${currentTranslateX - firstSetWidth}px)`;
-        requestAnimationFrame(() => { // Ensure the DOM has updated before re-enabling transition
+        requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
     }
 }
 
-// Initial setup for the loop
 setupLoop();
 
 imageTrack.addEventListener('mousedown', (e) => {
@@ -53,7 +53,7 @@ imageTrack.addEventListener('mousedown', (e) => {
     startXViewport = e.clientX - (parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0);
     initialClickX = e.clientX;
     imageTrack.classList.add('dragging');
-    imageTrack.style.transition = 'none'; // Disable transition during drag
+    imageTrack.style.transition = 'none';
 });
 
 imageTrack.addEventListener('mouseleave', () => {
@@ -66,7 +66,8 @@ imageTrack.addEventListener('mouseup', (e) => {
     isDragging = false;
     imageTrack.classList.remove('dragging');
     imageTrack.style.transition = 'transform 0.3s ease-in-out';
-    if (Math.abs(e.clientX - initialClickX) < 10) {
+    const clickDeltaX = Math.abs(e.clientX - initialClickX);
+    if (clickDeltaX < 10) {
         const clickedImage = e.target;
         if (clickedImage && clickedImage.tagName === 'IMG') {
             const zoomedDiv = document.createElement('div');
@@ -82,6 +83,8 @@ imageTrack.addEventListener('mouseup', (e) => {
             });
         }
     }
+    // Reset initialClickX on mouseup to avoid sticky drag issues
+    initialClickX = null;
 });
 
 imageTrack.addEventListener('mousemove', (e) => {
@@ -89,10 +92,9 @@ imageTrack.addEventListener('mousemove', (e) => {
     e.preventDefault();
     const deltaX = e.clientX - startXViewport;
     imageTrack.style.transform = `translateX(${deltaX}px)`;
-    loopGallery(); // Check for looping conditions on every mousemove
+    loopGallery();
 });
 
-// Prevent default drag on individual images
 images.forEach(img => {
     img.addEventListener('dragstart', (e) => {
         e.preventDefault();
