@@ -5,10 +5,12 @@ const images = imageTrack.querySelectorAll('img');
 let isDragging = false;
 let startX;
 let currentX;
+let initialClickX; // To track the initial click position
 
 imageTrack.addEventListener('mousedown', (e) => {
     isDragging = true;
-    startX = e.pageX - imageTrack.offsetLeft - imageTrack.getBoundingClientRect().left; // Get initial mouse X relative to imageTrack's visual start
+    startX = e.pageX - imageTrack.offsetLeft - imageTrack.getBoundingClientRect().left;
+    initialClickX = e.pageX; // Capture initial mouse down position
     imageTrack.classList.add('dragging');
 });
 
@@ -17,38 +19,20 @@ imageTrack.addEventListener('mouseleave', () => {
     imageTrack.classList.remove('dragging');
 });
 
-imageTrack.addEventListener('mouseup', () => {
+imageTrack.addEventListener('mouseup', (e) => {
     isDragging = false;
     imageTrack.classList.remove('dragging');
-});
-
-imageTrack.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    e.preventDefault();
-    currentX = e.pageX - imageTrack.offsetLeft - imageTrack.getBoundingClientRect().left; // Get current mouse X relative to imageTrack's visual start
-    const translateX = currentX - startX;
-    imageTrack.style.transform = `translateX(${translateX}px)`;
-});
-
-// Prevent default drag on individual images
-images.forEach(img => {
-    img.addEventListener('dragstart', (e) => {
-        e.preventDefault();
-    });
-});
-
-// Zoom functionality (remains largely the same, but 'hasDragged' is removed for simplicity with this approach)
-images.forEach(img => {
-    img.addEventListener('click', () => {
-        // Basic check if mouse moved significantly since mousedown
-        if (Math.abs(currentX - startX) < 5) { // Adjust the threshold as needed
+    // Check for click (minimal movement) on mouseup
+    if (Math.abs(e.pageX - initialClickX) < 5) { // Adjust threshold as needed
+        const clickedImage = e.target.closest('img');
+        if (clickedImage) {
             const zoomedDiv = document.createElement('div');
             zoomedDiv.classList.add('zoomed');
 
             const zoomedImage = document.createElement('img');
             zoomedImage.classList.add('zoomed-image');
-            zoomedImage.src = img.src;
-            zoomedImage.alt = img.alt;
+            zoomedImage.src = clickedImage.src;
+            zoomedImage.alt = clickedImage.alt;
 
             zoomedDiv.appendChild(zoomedImage);
             document.body.appendChild(zoomedDiv);
@@ -57,5 +41,20 @@ images.forEach(img => {
                 document.body.removeChild(zoomedDiv);
             });
         }
+    }
+});
+
+imageTrack.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    currentX = e.pageX - imageTrack.offsetLeft - imageTrack.getBoundingClientRect().left;
+    const translateX = startX - currentX; // Inverted for correct scroll direction
+    imageTrack.style.transform = `translateX(${translateX}px)`;
+});
+
+// Prevent default drag on individual images
+images.forEach(img => {
+    img.addEventListener('dragstart', (e) => {
+        e.preventDefault();
     });
 });
