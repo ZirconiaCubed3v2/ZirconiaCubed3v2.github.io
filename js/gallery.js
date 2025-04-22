@@ -29,8 +29,9 @@ imageTrack.addEventListener('mouseup', () => {
 imageTrack.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
     e.preventDefault();
-    const currentXWithinTrack = e.pageX - imageTrack.offsetLeft; // Mouse position within the track
-    const walk = (currentXWithinTrack - (startX - imageTrack.offsetLeft)) * 1; // Difference from initial mouse position within track
+    const currentXViewport = e.clientX; // Mouse X relative to the viewport
+    const startXViewport = startX - galleryContainer.offsetLeft + galleryContainer.clientLeft; // Initial mouse X relative to viewport
+    const walk = (currentXViewport - startXViewport) * 1;
     imageTrack.scrollLeft = scrollLeft - walk;
     console.log("imageTrack.scrollLeft:", imageTrack.scrollLeft);
     hasDragged = true;
