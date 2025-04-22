@@ -80,3 +80,9 @@ body {
     max-height: 90%;
     object-fit: contain; /* Ensure the whole image is visible */
 }
+
+/* ... other styles ... */
+
+.image-track.actively-dragging {
+    cursor: grabbing; /* Or a different visual cue */
+}
