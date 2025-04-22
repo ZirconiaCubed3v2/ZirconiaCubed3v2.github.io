@@ -4,7 +4,6 @@ const images = imageTrack.querySelectorAll('img');
 
 let isDragging = false;
 let startXViewport;
-let currentXViewport;
 let initialClickX;
 
 imageTrack.addEventListener('mousedown', (e) => {
@@ -12,20 +11,22 @@ imageTrack.addEventListener('mousedown', (e) => {
     startXViewport = e.clientX;
     initialClickX = e.clientX;
     imageTrack.classList.add('dragging');
+    imageTrack.style.transition = 'none'; // Disable transition during drag
 });
 
 imageTrack.addEventListener('mouseleave', () => {
     isDragging = false;
     imageTrack.classList.remove('dragging');
+    imageTrack.style.transition = 'transform 0.3s ease-in-out'; // Re-enable transition
 });
 
 imageTrack.addEventListener('mouseup', (e) => {
     isDragging = false;
     imageTrack.classList.remove('dragging');
-    // Check for click (minimal movement) on mouseup
-    if (Math.abs(e.clientX - initialClickX) < 10) { // Increased threshold
-        const clickedImage = e.target; // Try using e.target directly first
-        if (clickedImage && clickedImage.tagName === 'IMG') { // Ensure it's an IMG element
+    imageTrack.style.transition = 'transform 0.3s ease-in-out'; // Re-enable transition
+    if (Math.abs(e.clientX - initialClickX) < 10) {
+        const clickedImage = e.target;
+        if (clickedImage && clickedImage.tagName === 'IMG') {
             const zoomedDiv = document.createElement('div');
             zoomedDiv.classList.add('zoomed');
 
@@ -47,9 +48,8 @@ imageTrack.addEventListener('mouseup', (e) => {
 imageTrack.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
     e.preventDefault();
-    currentXViewport = e.clientX;
-    const translateX = startXViewport - currentXViewport;
-    imageTrack.style.transform = `translateX(${translateX}px)`;
+    const deltaX = e.clientX - startXViewport;
+    imageTrack.style.transform = `translateX(${deltaX}px)`;
 });
 
 // Prevent default drag on individual images
