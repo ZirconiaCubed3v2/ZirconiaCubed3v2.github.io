@@ -4,21 +4,17 @@ const images = imageTrack.querySelectorAll('img');
 
 let isDragging = false;
 let startX;
-let scrollLeft;
-let hasDragged = false; // Flag to track if a drag has occurred
+let currentX;
 
 imageTrack.addEventListener('mousedown', (e) => {
     isDragging = true;
-    startX = e.pageX - imageTrack.offsetLeft;
-    scrollLeft = imageTrack.scrollLeft;
+    startX = e.pageX - imageTrack.offsetLeft - imageTrack.getBoundingClientRect().left; // Get initial mouse X relative to imageTrack's visual start
     imageTrack.classList.add('dragging');
-    hasDragged = false; // Reset the drag flag on mousedown
 });
 
 imageTrack.addEventListener('mouseleave', () => {
     isDragging = false;
     imageTrack.classList.remove('dragging');
-    hasDragged = false;
 });
 
 imageTrack.addEventListener('mouseup', () => {
@@ -29,11 +25,9 @@ imageTrack.addEventListener('mouseup', () => {
 imageTrack.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
     e.preventDefault();
-    const mouseXWithinTrack = e.pageX - imageTrack.offsetLeft;
-    const scrollAmount = mouseXWithinTrack - (startX - imageTrack.offsetLeft);
-    imageTrack.scrollLeft = scrollLeft - scrollAmount;
-    console.log("imageTrack.scrollLeft:", imageTrack.scrollLeft);
-    hasDragged = true;
+    currentX = e.pageX - imageTrack.offsetLeft - imageTrack.getBoundingClientRect().left; // Get current mouse X relative to imageTrack's visual start
+    const translateX = currentX - startX;
+    imageTrack.style.transform = `translateX(${translateX}px)`;
 });
 
 // Prevent default drag on individual images
@@ -43,11 +37,11 @@ images.forEach(img => {
     });
 });
 
-// Zoom functionality
+// Zoom functionality (remains largely the same, but 'hasDragged' is removed for simplicity with this approach)
 images.forEach(img => {
     img.addEventListener('click', () => {
-        // Only zoom if a drag has NOT occurred
-        if (!hasDragged) {
+        // Basic check if mouse moved significantly since mousedown
+        if (Math.abs(currentX - startX) < 5) { // Adjust the threshold as needed
             const zoomedDiv = document.createElement('div');
             zoomedDiv.classList.add('zoomed');
 
@@ -63,7 +57,5 @@ images.forEach(img => {
                 document.body.removeChild(zoomedDiv);
             });
         }
-        // Reset the drag flag after the click attempt
-        hasDragged = false;
     });
 });
