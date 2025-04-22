@@ -22,10 +22,24 @@ imageTrack.addEventListener('mouseleave', () => {
 imageTrack.addEventListener('mouseup', (e) => {
     isDragging = false;
     imageTrack.classList.remove('dragging');
+    // Check for click (minimal movement) on mouseup
     if (Math.abs(e.clientX - initialClickX) < 5) {
         const clickedImage = e.target.closest('img');
         if (clickedImage) {
-            // Zoom logic (same as before)
+            const zoomedDiv = document.createElement('div');
+            zoomedDiv.classList.add('zoomed');
+
+            const zoomedImage = document.createElement('img');
+            zoomedImage.classList.add('zoomed-image');
+            zoomedImage.src = clickedImage.src;
+            zoomedImage.alt = clickedImage.alt;
+
+            zoomedDiv.appendChild(zoomedImage);
+            document.body.appendChild(zoomedDiv);
+
+            zoomedDiv.addEventListener('click', () => {
+                document.body.removeChild(zoomedDiv);
+            });
         }
     }
 });
@@ -38,5 +52,68 @@ imageTrack.addEventListener('mousemove', (e) => {
     imageTrack.style.transform = `translateX(${translateX}px)`;
 });
 
-// Prevent default drag on individual images (remains the same)
-// Zoom functionality (remains the same)
+// Prevent default drag on individual images
+images.forEach(img => {
+    img.addEventListener('dragstart', (e) => {
+        e.preventDefault();
+    });
+});const galleryContainer = document.querySelector('.gallery-container');
+const imageTrack = document.querySelector('.image-track');
+const images = imageTrack.querySelectorAll('img');
+
+let isDragging = false;
+let startXViewport; // Track start X relative to viewport
+let currentXViewport; // Track current X relative to viewport
+let initialClickX;
+
+imageTrack.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startXViewport = e.clientX; // Capture initial mouse X in viewport coordinates
+    initialClickX = e.clientX;
+    imageTrack.classList.add('dragging');
+});
+
+imageTrack.addEventListener('mouseleave', () => {
+    isDragging = false;
+    imageTrack.classList.remove('dragging');
+});
+
+imageTrack.addEventListener('mouseup', (e) => {
+    isDragging = false;
+    imageTrack.classList.remove('dragging');
+    // Check for click (minimal movement) on mouseup
+    if (Math.abs(e.clientX - initialClickX) < 5) {
+        const clickedImage = e.target.closest('img');
+        if (clickedImage) {
+            const zoomedDiv = document.createElement('div');
+            zoomedDiv.classList.add('zoomed');
+
+            const zoomedImage = document.createElement('img');
+            zoomedImage.classList.add('zoomed-image');
+            zoomedImage.src = clickedImage.src;
+            zoomedImage.alt = clickedImage.alt;
+
+            zoomedDiv.appendChild(zoomedImage);
+            document.body.appendChild(zoomedDiv);
+
+            zoomedDiv.addEventListener('click', () => {
+                document.body.removeChild(zoomedDiv);
+            });
+        }
+    }
+});
+
+imageTrack.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    currentXViewport = e.clientX; // Update current mouse X in viewport coordinates
+    const translateX = startXViewport - currentXViewport; // Calculate translation based on viewport coordinates
+    imageTrack.style.transform = `translateX(${translateX}px)`;
+});
+
+// Prevent default drag on individual images
+images.forEach(img => {
+    img.addEventListener('dragstart', (e) => {
+        e.preventDefault();
+    });
+});
