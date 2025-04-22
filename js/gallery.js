@@ -36,28 +36,34 @@ images.forEach(img => {
         e.preventDefault();
     });
 
-    img.addEventListener('mousedown', (e) => {
-        // Optionally, you can still prevent default here if it causes issues
-        // e.preventDefault();
+    // Intercept mousedown on images to potentially prevent click
+    img.addEventListener('mousedown', () => {
+        // If a drag starts on the image track, we assume subsequent clicks are not for zooming
+        isDragging = true;
     });
 });
 
 // Zoom functionality
 images.forEach(img => {
     img.addEventListener('click', () => {
-        const zoomedDiv = document.createElement('div');
-        zoomedDiv.classList.add('zoomed');
+        // Only zoom if we are NOT currently dragging
+        if (!isDragging) {
+            const zoomedDiv = document.createElement('div');
+            zoomedDiv.classList.add('zoomed');
 
-        const zoomedImage = document.createElement('img');
-        zoomedImage.classList.add('zoomed-image');
-        zoomedImage.src = img.src;
-        zoomedImage.alt = img.alt;
+            const zoomedImage = document.createElement('img');
+            zoomedImage.classList.add('zoomed-image');
+            zoomedImage.src = img.src;
+            zoomedImage.alt = img.alt;
 
-        zoomedDiv.appendChild(zoomedImage);
-        document.body.appendChild(zoomedDiv);
+            zoomedDiv.appendChild(zoomedImage);
+            document.body.appendChild(zoomedDiv);
 
-        zoomedDiv.addEventListener('click', () => {
-            document.body.removeChild(zoomedDiv);
-        });
+            zoomedDiv.addEventListener('click', () => {
+                document.body.removeChild(zoomedDiv);
+            });
+        }
+        // Reset the dragging flag after a potential click/drag sequence
+        isDragging = false;
     });
 });
