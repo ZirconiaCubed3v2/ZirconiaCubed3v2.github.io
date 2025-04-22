@@ -28,11 +28,11 @@ imageTrack.addEventListener('mouseup', () => {
 
 imageTrack.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
-    e.preventDefault(); // Prevent text selection during drag
-    const x = e.pageX - imageTrack.offsetLeft;
-    const walk = (x - startX) * 1;
+    e.preventDefault();
+    const currentX = e.pageX - galleryContainer.offsetLeft; // Use offsetLeft of the container
+    const walk = (currentX - startX) * 1;
     imageTrack.scrollLeft = scrollLeft - walk;
-    hasDragged = true; // Set the drag flag if mousemove occurs after mousedown
+    hasDragged = true;
 });
 
 // Prevent default drag on individual images
