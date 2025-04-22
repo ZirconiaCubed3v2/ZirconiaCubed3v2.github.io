@@ -29,10 +29,9 @@ imageTrack.addEventListener('mouseup', () => {
 imageTrack.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
     e.preventDefault();
-    const currentXViewport = e.clientX; // Mouse X relative to the viewport
-    const startXViewport = startX - galleryContainer.offsetLeft + galleryContainer.clientLeft; // Initial mouse X relative to viewport
-    const walk = (currentXViewport - startXViewport) * 1;
-    imageTrack.scrollLeft = scrollLeft - walk;
+    const mouseXWithinTrack = e.pageX - imageTrack.offsetLeft;
+    const scrollAmount = mouseXWithinTrack - (startX - imageTrack.offsetLeft);
+    imageTrack.scrollLeft = scrollLeft - scrollAmount;
     console.log("imageTrack.scrollLeft:", imageTrack.scrollLeft);
     hasDragged = true;
 });
