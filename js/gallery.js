@@ -11,7 +11,6 @@ imageTrack.addEventListener('mousedown', (e) => {
     startX = e.pageX - imageTrack.offsetLeft;
     scrollLeft = imageTrack.scrollLeft;
     imageTrack.classList.add('dragging');
-    e.preventDefault(); // Prevent the browser's default drag behavior on images
 });
 
 imageTrack.addEventListener('mouseleave', () => {
@@ -31,7 +30,19 @@ imageTrack.addEventListener('mousemove', (e) => {
     imageTrack.scrollLeft = scrollLeft - walk;
 });
 
-// Zoom functionality (remains the same)
+// Prevent default drag on individual images
+images.forEach(img => {
+    img.addEventListener('dragstart', (e) => {
+        e.preventDefault();
+    });
+
+    img.addEventListener('mousedown', (e) => {
+        // Optionally, you can still prevent default here if it causes issues
+        // e.preventDefault();
+    });
+});
+
+// Zoom functionality
 images.forEach(img => {
     img.addEventListener('click', () => {
         const zoomedDiv = document.createElement('div');
