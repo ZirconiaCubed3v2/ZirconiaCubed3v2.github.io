@@ -8,7 +8,7 @@ let initialClickX;
 
 imageTrack.addEventListener('mousedown', (e) => {
     isDragging = true;
-    startXViewport = e.clientX;
+    startXViewport = e.clientX - (parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0);
     initialClickX = e.clientX;
     imageTrack.classList.add('dragging');
     imageTrack.style.transition = 'none'; // Disable transition during drag
