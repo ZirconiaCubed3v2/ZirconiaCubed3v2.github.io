@@ -32,6 +32,7 @@ imageTrack.addEventListener('mousemove', (e) => {
     const currentX = e.pageX - galleryContainer.offsetLeft; // Use offsetLeft of the container
     const walk = (currentX - startX) * 1;
     imageTrack.scrollLeft = scrollLeft - walk;
+    console.log("imageTrack.scrollLeft:", imageTrack.scrollLeft);
     hasDragged = true;
 });
 
