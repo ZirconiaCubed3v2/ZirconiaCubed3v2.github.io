@@ -7,6 +7,12 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: #808080;
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .mainnav {
@@ -31,4 +37,49 @@ body {
 }
 .mainnav a:active {
   background-color: #000000;
+}
+
+.gallery-container {
+    width: 80%; /* Adjust as needed */
+    max-width: 900px;
+    overflow: hidden; /* Hide images that go beyond the container */
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-track {
+    display: flex; /* Arrange images horizontally */
+    transition: transform 0.3s ease-in-out; /* Smooth scrolling animation */
+}
+
+.image-track img {
+    width: auto; /* Maintain aspect ratio */
+    height: 400px; /* Adjust as needed */
+    margin-right: 20px; /* Spacing between images */
+    cursor: grab; /* Indicate draggable */
+}
+
+.image-track img:last-child {
+    margin-right: 0; /* Remove extra margin on the last image */
+}
+
+/* Styles for zoomed images (added by JavaScript) */
+.zoomed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer; /* Indicate close on click */
+}
+
+.zoomed-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* Ensure the whole image is visible */
 }
