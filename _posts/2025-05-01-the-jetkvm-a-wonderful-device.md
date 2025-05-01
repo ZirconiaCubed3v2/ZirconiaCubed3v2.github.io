@@ -1,9 +1,9 @@
 ---
 title: "The JetKVM: A Wonderful Device"
-date: ???
+date: 2025-05-01
 description: "The JetKVM is one of the best little tech gadgets I have ever used"
 keywords: jetkvm, kvm, server, keyboard, video, mouse, cloud, ota, remote management
-thumbnail: ???
+thumbnail: https://raw.githubusercontent.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/main/_images/2025-05-01-jetkvm.png
 ---
 <h2 id="heading">The JetKVM</h2>
 I don't even have a good title for this article because I couldn't think of anything short and to the point for how good the JetKVM is.
