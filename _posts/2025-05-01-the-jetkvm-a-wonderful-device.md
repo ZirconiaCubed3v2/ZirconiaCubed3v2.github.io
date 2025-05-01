@@ -50,7 +50,7 @@ The latency isn't much of a problem, which greatly surprised me, as it is usuall
 <br>
 <h3 id="heading">Extension Boards</h3>
 The JetKVM team added an expansion port in the form of an RJ-12 port, the pinout of which is listed <a href="https://jetkvm.com/docs/peripheral-devices/extension-port" target="_blank" rel="noopener noreferrer">on their website</a>.
-They're going to make the source core open-source in December when the devices start to ship for production, but they have made 3 of their own boards:<br>
+They're going to make the codebase open-source in December when the devices start to ship for production, but as of right now, they have 3 of their own boards:<br>
 <h4 id="heading">The ATX Power Control Board</h4>
 This board has a pin header at the end of the PCB which connect to the front-panel pins on a computer's motherboard so the JetKVM can control power functions such as pressing the power button.
 I didn't get one of these, but I will as soon as I remember to do so, as this board alone makes it the best IP-KVM I have ever heard of, and before I heard of the JetKVM, I was thinking of making my own remote power-control system with relays and complicated electronics, but this greatly simplifies it.
