@@ -70,5 +70,5 @@ All in all, the small form factor paired with the incredible build quality and f
 &nbsp;  
 &nbsp;  
 
-I don't have a witty remark for the end of this post,
+I don't have a witty remark for the end of this post,  
 <img src="https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/main/_images/sig.png?raw=true" alt="signature" style="width:250px;"/>
