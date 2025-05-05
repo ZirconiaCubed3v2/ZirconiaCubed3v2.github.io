@@ -36,53 +36,64 @@ body {
   background-color: #000000;
 }
 
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
 .gallery-container {
     width: 80%; /* Adjust as needed */
-    max-width: 900px;
-    overflow: hidden; /* Hide images that go beyond the container */
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    overflow-x: auto; /* Enable horizontal scrollbar when content overflows */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    scrollbar-width: thin; /* For Firefox */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+
+.gallery-container::-webkit-scrollbar {
+    height: 8px; /* Adjust scrollbar height */
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Scrollbar thumb color */
+    border-radius: 4px;
+}
+
+.gallery-container::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Scrollbar track color */
+    border-radius: 4px;
 }
 
 .image-track {
-    display: flex; /* Arrange images horizontally */
-    transition: transform 0.3s ease-in-out; /* Smooth scrolling animation */
+    display: flex;
+    flex-direction: row; /* Arrange images horizontally */
+    align-items: center; /* Vertically align images in the track */
+    gap: 10px; /* Spacing between images */
+    padding: 10px 0; /* Optional padding for the track */
 }
 
 .image-track img {
-    width: auto; /* Maintain aspect ratio */
-    height: 400px; /* Adjust as needed */
-    margin-right: 20px; /* Spacing between images */
-    cursor: grab; /* Indicate draggable */
+    height: 300px; /* Adjust image height */
+    object-fit: contain; /* Ensure full image is visible */
+    cursor: pointer; /* Indicate clickability for zoom */
 }
 
-.image-track img:last-child {
-    margin-right: 0; /* Remove extra margin on the last image */
-}
-
-/* Styles for zoomed images (added by JavaScript) */
 .zoomed {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    cursor: pointer; /* Indicate close on click */
+    cursor: pointer;
 }
 
 .zoomed-image {
     max-width: 90%;
     max-height: 90%;
-    object-fit: contain; /* Ensure the whole image is visible */
-}
-
-/* ... other styles ... */
-
-.image-track.actively-dragging {
-    cursor: grabbing; /* Or a different visual cue */
+    object-fit: contain;
 }
