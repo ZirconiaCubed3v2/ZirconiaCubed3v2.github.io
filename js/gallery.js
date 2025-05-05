@@ -35,8 +35,8 @@ function loopGallery() {
     // Looping when scrolling to the right (past the first set)
     if (currentTranslateX < -firstSetWidth) {
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(0px)`; // Jump to the start
-        startXViewport += firstSetWidth; // Adjust startX for continuous dragging
+        imageTrack.style.transform = `translateX(0px)`;
+        // No direct startXViewport adjustment here
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
@@ -44,8 +44,8 @@ function loopGallery() {
     // Looping when scrolling to the left (before the first set)
     else if (currentTranslateX > 0) {
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(${-firstSetWidth}px)`; // Jump to the end of the first set
-        startXViewport -= firstSetWidth; // Adjust startX for continuous dragging
+        imageTrack.style.transform = `translateX(${-firstSetWidth}px)`;
+        // No direct startXViewport adjustment here
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
@@ -56,10 +56,12 @@ setupLoop();
 
 imageTrack.addEventListener('mousedown', (e) => {
     isDragging = true;
-    startXViewport = e.clientX - (parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0);
+    const currentTranslateX = parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
+    startXViewport = e.clientX - currentTranslateX; // Anchor startX to the current visual position
     initialClickX = e.clientX;
     imageTrack.classList.add('dragging');
     imageTrack.style.transition = 'none';
+    console.log("mousedown - startXViewport:", startXViewport, "currentTranslateX:", currentTranslateX);
 });
 
 imageTrack.addEventListener('mouseleave', () => {
