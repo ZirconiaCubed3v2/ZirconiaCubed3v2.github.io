@@ -10,42 +10,44 @@ let loopEnabled = true;
 let firstSetWidth;
 
 function setupLoop() {
-    if (!loopEnabled || images.length > initialImageCount) return;
+    if (!loopEnabled || images.length > initialImageCount * 3) return; // Limit to a reasonable number of duplicates
 
     const originalImages = Array.from(imageTrack.children).slice(0, initialImageCount);
-    originalImages.forEach(img => {
-        const duplicate = img.cloneNode(true);
-        imageTrack.appendChild(duplicate);
-        // Prevent default drag on duplicated images as well
-        duplicate.addEventListener('dragstart', (e) => {
-            e.preventDefault();
+    for (let i = 0; i < 2; i++) { // Duplicate twice: original + 2 copies
+        originalImages.forEach(img => {
+            const duplicate = img.cloneNode(true);
+            imageTrack.appendChild(duplicate);
+            duplicate.addEventListener('dragstart', (e) => {
+                e.preventDefault();
+            });
         });
-    });
+    }
 
     firstSetWidth = initialImageCount * imageWidth;
-    console.log("firstSetWidth:", firstSetWidth);
-    imageTrack.style.width = (initialImageCount * 2) * imageWidth + 'px';
+    imageTrack.style.width = (initialImageCount * 3) * imageWidth + 'px';
+    // Optionally, set initial position to the start of the second set
+    imageTrack.style.transform = `translateX(${-firstSetWidth}px)`;
 }
 
 function loopGallery() {
-    if (!loopEnabled || !isDragging || images.length <= initialImageCount || !firstSetWidth) return;
+    if (!loopEnabled || !isDragging || images.length <= initialImageCount * 2 || !firstSetWidth) return;
 
     const currentTranslateX = parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
+    const totalWidth = firstSetWidth * 3; // Total width with two duplicates
 
-    // Looping when scrolling to the right (past the first set)
-    if (currentTranslateX < -firstSetWidth) {
+    const threshold = firstSetWidth; // When to trigger a reset
+
+    if (currentTranslateX < -totalWidth + threshold) {
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(0px)`;
-        // No direct startXViewport adjustment here
+        imageTrack.style.transform = `translateX(${-threshold}px)`;
+        startXViewport += (totalWidth - threshold);
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
-    }
-    // Looping when scrolling to the left (before the first set)
-    else if (currentTranslateX > 0) {
+    } else if (currentTranslateX > 0) {
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(${-firstSetWidth}px)`;
-        // No direct startXViewport adjustment here
+        imageTrack.style.transform = `translateX(${-threshold * 2}px)`;
+        startXViewport -= (totalWidth - threshold);
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
