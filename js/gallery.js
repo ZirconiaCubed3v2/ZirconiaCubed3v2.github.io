@@ -1,7 +1,7 @@
 const galleryContainer = document.querySelector('.gallery-container');
 const imageTrack = document.querySelector('.image-track');
-const images = Array.from(imageTrack.children);
-const originalImageCount = images.length / 2;
+const initialImageCount = imageTrack.children.length; // Get initial number of images
+const images = Array.from(imageTrack.children); // Get live array after potential duplication
 const imageWidth = images[0].offsetWidth + parseInt(window.getComputedStyle(images[0]).marginRight) || 0;
 let isDragging = false;
 let startXViewport;
@@ -10,23 +10,22 @@ let loopEnabled = true;
 let firstSetWidth;
 
 function setupLoop() {
-    console.log("images.length:", images.length, "originalImageCount:", originalImageCount);
-    if (!loopEnabled || images.length > originalImageCount) return;
+    if (!loopEnabled || images.length > initialImageCount) return; // Use initial count
 
-    const originalImages = images.slice();
+    const originalImages = Array.from(imageTrack.children).slice(0, initialImageCount); // Get the original set
     originalImages.forEach(img => {
         const duplicate = img.cloneNode(true);
         imageTrack.appendChild(duplicate);
     });
 
-    firstSetWidth = originalImageCount * imageWidth;
+    firstSetWidth = initialImageCount * imageWidth;
     console.log("firstSetWidth:", firstSetWidth);
-    imageTrack.style.width = (originalImageCount * 2) * imageWidth + 'px';
+    imageTrack.style.width = (initialImageCount * 2) * imageWidth + 'px';
 }
 
 function loopGallery() {
-    console.log("loopGallery() called. isDragging:", isDragging); // ADDED LOG
-    if (!loopEnabled || !isDragging || images.length <= originalImageCount || !firstSetWidth) return;
+    console.log("loopGallery() called. isDragging:", isDragging);
+    if (!loopEnabled || !isDragging || images.length <= initialImageCount || !firstSetWidth) return; // Use initial count
 
     const currentTranslateX = parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
 
@@ -34,7 +33,6 @@ function loopGallery() {
     console.log("firstSetWidth:", firstSetWidth);
     console.log("startXViewport before loop:", startXViewport);
 
-    // Looping when scrolling to the right (towards negative translateX)
     if (currentTranslateX < -firstSetWidth + 10) {
         imageTrack.style.transition = 'none';
         imageTrack.style.transform = `translateX(0px)`;
@@ -45,7 +43,6 @@ function loopGallery() {
         console.log("Looped right. New startXViewport:", startXViewport);
     }
 
-    // Looping when scrolling to the left (towards positive translateX)
     if (currentTranslateX > -10) {
         imageTrack.style.transition = 'none';
         imageTrack.style.transform = `translateX(${-firstSetWidth}px)`;
