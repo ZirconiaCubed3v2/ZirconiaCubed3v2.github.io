@@ -27,21 +27,23 @@ function loopGallery() {
 
     const currentTranslateX = parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
 
-    // Looping when reaching the end of the first set (scrolling right)
-    if (currentTranslateX < -firstSetWidth + 1) { // Added a small threshold
+    // Looping when scrolling to the right (towards negative translateX)
+    if (currentTranslateX < -firstSetWidth) {
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(${currentTranslateX + firstSetWidth}px)`;
+        imageTrack.style.transform = `translateX(0px)`; // Jump back to the start
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
+            startXViewport += firstSetWidth; // Adjust startX for continuous dragging
         });
     }
 
-    // Looping when reaching the beginning of the first set (scrolling left)
-    if (currentTranslateX > 1) { // Added a small threshold
+    // Looping when scrolling to the left (towards positive translateX)
+    if (currentTranslateX > 0) {
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(${currentTranslateX - firstSetWidth}px)`;
+        imageTrack.style.transform = `translateX(${-firstSetWidth}px)`; // Jump to the end of the first set
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
+            startXViewport -= firstSetWidth; // Adjust startX for continuous dragging
         });
     }
 }
@@ -86,13 +88,12 @@ imageTrack.addEventListener('mouseup', (e) => {
     // Reset initialClickX on mouseup to avoid sticky drag issues
     initialClickX = null;
 });
-
 imageTrack.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
     e.preventDefault();
     const deltaX = e.clientX - startXViewport;
     imageTrack.style.transform = `translateX(${deltaX}px)`;
-    loopGallery();
+    loopGallery(); // Check for looping
 });
 
 images.forEach(img => {
