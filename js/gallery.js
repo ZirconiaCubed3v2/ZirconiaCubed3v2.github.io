@@ -1,7 +1,7 @@
 const galleryContainer = document.querySelector('.gallery-container');
 const imageTrack = document.querySelector('.image-track');
 const images = Array.from(imageTrack.children);
-const originalImageCount = images.length / 2; // Assuming we duplicated once
+const originalImageCount = images.length / 2;
 const imageWidth = images[0].offsetWidth + parseInt(window.getComputedStyle(images[0]).marginRight) || 0;
 let isDragging = false;
 let startXViewport;
@@ -10,9 +10,9 @@ let loopEnabled = true;
 let firstSetWidth;
 
 function setupLoop() {
-    if (!loopEnabled || images.length > originalImageCount) return; // Only duplicate once
+    if (!loopEnabled || images.length > originalImageCount) return;
 
-    const originalImages = images.slice(); // Create a copy of the original set
+    const originalImages = images.slice();
     originalImages.forEach(img => {
         const duplicate = img.cloneNode(true);
         imageTrack.appendChild(duplicate);
@@ -23,6 +23,7 @@ function setupLoop() {
 }
 
 function loopGallery() {
+    console.log("loopGallery() called. isDragging:", isDragging); // ADDED LOG
     if (!loopEnabled || !isDragging || images.length <= originalImageCount || !firstSetWidth) return;
 
     const currentTranslateX = parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
@@ -91,10 +92,11 @@ imageTrack.addEventListener('mouseup', (e) => {
             });
         }
     }
-    // Reset initialClickX on mouseup to avoid sticky drag issues
     initialClickX = null;
 });
+
 imageTrack.addEventListener('mousemove', (e) => {
+    console.log("mousemove called. isDragging:", isDragging); // ADDED LOG
     if (!isDragging) return;
     e.preventDefault();
     const deltaX = e.clientX - startXViewport;
