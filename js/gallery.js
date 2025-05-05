@@ -33,22 +33,21 @@ function loopGallery() {
     if (!loopEnabled || !isDragging || images.length <= initialImageCount * 2 || !firstSetWidth) return;
 
     const currentTranslateX = parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
-    const totalWidth = firstSetWidth * 3;
 
-    // Looping when scrolling to the right (past the first virtual set)
+    // Looping when scrolling to the right (past the second virtual set)
     if (currentTranslateX < -firstSetWidth * 2) {
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(${-firstSetWidth}px)`; // Reset to the middle virtual set
-        startXViewport += firstSetWidth;
+        imageTrack.style.transform = `translateX(${-firstSetWidth}px)`; // Reset to the middle
+        startXViewport += firstSetWidth * 2; // Adjust startX for continuous rightward drag
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
     }
     // Looping when scrolling to the left (before the first virtual set)
-    else if (currentTranslateX > -firstSetWidth) {
+    else if (currentTranslateX > -firstSetWidth * 0.1) { // Adjusted left threshold
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(${-firstSetWidth * 2}px)`; // Reset to the middle virtual set
-        startXViewport -= firstSetWidth;
+        imageTrack.style.transform = `translateX(${-firstSetWidth * 1.9}px)`; // Reset to near the end
+        startXViewport -= firstSetWidth * 2; // Adjust startX for continuous leftward drag
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
