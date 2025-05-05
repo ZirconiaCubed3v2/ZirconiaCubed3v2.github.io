@@ -27,24 +27,30 @@ function loopGallery() {
 
     const currentTranslateX = parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
 
+    console.log("Current translateX:", currentTranslateX);
+    console.log("firstSetWidth:", firstSetWidth);
+    console.log("startXViewport before loop:", startXViewport);
+
     // Looping when scrolling to the right (towards negative translateX)
     if (currentTranslateX < -firstSetWidth) {
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(0px)`; // Jump back to the start
+        imageTrack.style.transform = `translateX(0px)`;
+        startXViewport += firstSetWidth;
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
-            startXViewport += firstSetWidth; // Adjust startX for continuous dragging
         });
+        console.log("Looped right. New startXViewport:", startXViewport);
     }
 
     // Looping when scrolling to the left (towards positive translateX)
     if (currentTranslateX > 0) {
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(${-firstSetWidth}px)`; // Jump to the end of the first set
+        imageTrack.style.transform = `translateX(${-firstSetWidth}px)`;
+        startXViewport -= firstSetWidth;
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
-            startXViewport -= firstSetWidth; // Adjust startX for continuous dragging
         });
+        console.log("Looped left. New startXViewport:", startXViewport);
     }
 }
 
@@ -93,7 +99,7 @@ imageTrack.addEventListener('mousemove', (e) => {
     e.preventDefault();
     const deltaX = e.clientX - startXViewport;
     imageTrack.style.transform = `translateX(${deltaX}px)`;
-    loopGallery(); // Check for looping
+    loopGallery();
 });
 
 images.forEach(img => {
