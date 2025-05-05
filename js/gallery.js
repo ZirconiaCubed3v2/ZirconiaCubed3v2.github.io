@@ -33,7 +33,7 @@ function loopGallery() {
     console.log("startXViewport before loop:", startXViewport);
 
     // Looping when scrolling to the right (towards negative translateX)
-    if (currentTranslateX < -firstSetWidth) {
+    if (currentTranslateX < -firstSetWidth + 10) {
         imageTrack.style.transition = 'none';
         imageTrack.style.transform = `translateX(0px)`;
         startXViewport += firstSetWidth;
@@ -44,7 +44,7 @@ function loopGallery() {
     }
 
     // Looping when scrolling to the left (towards positive translateX)
-    if (currentTranslateX > 0) {
+    if (currentTranslateX > -10) {
         imageTrack.style.transition = 'none';
         imageTrack.style.transform = `translateX(${-firstSetWidth}px)`;
         startXViewport -= firstSetWidth;
@@ -96,7 +96,8 @@ imageTrack.addEventListener('mouseup', (e) => {
 });
 
 imageTrack.addEventListener('mousemove', (e) => {
-    console.log("mousemove called. isDragging:", isDragging); // ADDED LOG
+    console.log("Current translateX (mousemove):", parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0);
+    // console.log("mousemove called. isDragging:", isDragging); // ADDED LOG
     if (!isDragging) return;
     e.preventDefault();
     const deltaX = e.clientX - startXViewport;
