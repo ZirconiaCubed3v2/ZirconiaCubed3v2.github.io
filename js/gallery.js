@@ -10,6 +10,7 @@ let loopEnabled = true;
 let firstSetWidth;
 
 function setupLoop() {
+    console.log("images.length:", images.length, "originalImageCount:", originalImageCount);
     if (!loopEnabled || images.length > originalImageCount) return;
 
     const originalImages = images.slice();
@@ -19,7 +20,7 @@ function setupLoop() {
     });
 
     firstSetWidth = originalImageCount * imageWidth;
-     console.log("firstSetWidth:", firstSetWidth);
+    console.log("firstSetWidth:", firstSetWidth);
     imageTrack.style.width = (originalImageCount * 2) * imageWidth + 'px';
 }
 
