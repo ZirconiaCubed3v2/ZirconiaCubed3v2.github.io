@@ -19,6 +19,7 @@ function setupLoop() {
     });
 
     firstSetWidth = originalImageCount * imageWidth;
+     console.log("firstSetWidth:", firstSetWidth);
     imageTrack.style.width = (originalImageCount * 2) * imageWidth + 'px';
 }
 
