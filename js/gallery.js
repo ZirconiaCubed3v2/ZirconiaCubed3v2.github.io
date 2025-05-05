@@ -43,13 +43,13 @@ function loopGallery() {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
     }
-    // Looping when scrolling to the left (before the first virtual set)
-    else if (currentTranslateX > -firstSetWidth * 0.9) { // Adjusted left threshold (closer to -firstSetWidth)
+    // Looping when scrolling to the left (slightly before the first virtual set)
+    else if (currentTranslateX > -firstSetWidth * 0.5) { // Adjusted left threshold (further from -firstSetWidth)
         console.log("Looping Left Triggered!");
         console.log("currentTranslateX:", currentTranslateX);
         console.log("firstSetWidth:", firstSetWidth);
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(${-firstSetWidth * 1}px)`; // Reset to the middle
+        imageTrack.style.transform = `translateX(${-firstSetWidth * 1.5}px)`; // Reset towards the end
         startXViewport -= firstSetWidth * 2;
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
