@@ -16,6 +16,10 @@ function setupLoop() {
     originalImages.forEach(img => {
         const duplicate = img.cloneNode(true);
         imageTrack.appendChild(duplicate);
+        // Prevent default drag on duplicated images as well
+        duplicate.addEventListener('dragstart', (e) => {
+            e.preventDefault();
+        });
     });
 
     firstSetWidth = initialImageCount * imageWidth;
@@ -28,10 +32,7 @@ function loopGallery() {
 
     const currentTranslateX = parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
 
-    console.log("Current translateX (loop check):", currentTranslateX);
-    console.log("startXViewport (before potential loop):", startXViewport);
-
-    // Looping when scrolling to the right (towards negative translateX)
+    // Looping when scrolling to the right
     if (currentTranslateX < -firstSetWidth + 10) {
         imageTrack.style.transition = 'none';
         imageTrack.style.transform = `translateX(0px)`;
@@ -39,10 +40,9 @@ function loopGallery() {
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
-        console.log("Looped right. New startXViewport:", startXViewport);
     }
 
-    // Looping when scrolling to the left (towards positive translateX)
+    // Looping when scrolling to the left
     if (currentTranslateX > -10) {
         imageTrack.style.transition = 'none';
         imageTrack.style.transform = `translateX(${-firstSetWidth}px)`;
@@ -50,9 +50,7 @@ function loopGallery() {
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
-        console.log("Looped left. New startXViewport:", startXViewport);
     }
-    console.log("startXViewport (after potential loop):", startXViewport);
 }
 
 setupLoop();
@@ -63,7 +61,6 @@ imageTrack.addEventListener('mousedown', (e) => {
     initialClickX = e.clientX;
     imageTrack.classList.add('dragging');
     imageTrack.style.transition = 'none';
-    console.log("mousedown - startXViewport:", startXViewport);
 });
 
 imageTrack.addEventListener('mouseleave', () => {
@@ -73,7 +70,7 @@ imageTrack.addEventListener('mouseleave', () => {
 });
 
 imageTrack.addEventListener('mouseup', (e) => {
-    isDragging = false;
+    isDragging = false; // Ensure isDragging is set to false on mouseup
     imageTrack.classList.remove('dragging');
     imageTrack.style.transition = 'transform 0.3s ease-in-out';
     const clickDeltaX = Math.abs(e.clientX - initialClickX);
@@ -101,7 +98,6 @@ imageTrack.addEventListener('mousemove', (e) => {
     e.preventDefault();
     const deltaX = e.clientX - startXViewport;
     imageTrack.style.transform = `translateX(${deltaX}px)`;
-    console.log("mousemove - deltaX:", deltaX, "startXViewport:", startXViewport, "translateX:", parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0);
     loopGallery();
 });
 
