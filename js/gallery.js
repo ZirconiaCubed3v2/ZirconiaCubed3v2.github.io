@@ -33,21 +33,22 @@ function loopGallery() {
     if (!loopEnabled || !isDragging || images.length <= initialImageCount * 2 || !firstSetWidth) return;
 
     const currentTranslateX = parseFloat(imageTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
-    const totalWidth = firstSetWidth * 3; // Total width with two duplicates
+    const totalWidth = firstSetWidth * 3;
 
-    const threshold = firstSetWidth; // When to trigger a reset
-
-    if (currentTranslateX < -totalWidth + threshold) {
+    // Looping when scrolling to the right (past the first virtual set)
+    if (currentTranslateX < -firstSetWidth * 2) {
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(${-threshold}px)`;
-        startXViewport += (totalWidth - threshold);
+        imageTrack.style.transform = `translateX(${-firstSetWidth}px)`; // Reset to the middle virtual set
+        startXViewport += firstSetWidth;
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
-    } else if (currentTranslateX > 0) {
+    }
+    // Looping when scrolling to the left (before the first virtual set)
+    else if (currentTranslateX > -firstSetWidth) {
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(${-threshold * 2}px)`;
-        startXViewport -= (totalWidth - threshold);
+        imageTrack.style.transform = `translateX(${-firstSetWidth * 2}px)`; // Reset to the middle virtual set
+        startXViewport -= firstSetWidth;
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
