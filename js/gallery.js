@@ -38,16 +38,19 @@ function loopGallery() {
     if (currentTranslateX < -firstSetWidth * 2) {
         imageTrack.style.transition = 'none';
         imageTrack.style.transform = `translateX(${-firstSetWidth}px)`; // Reset to the middle
-        startXViewport += firstSetWidth * 2; // Adjust startX for continuous rightward drag
+        startXViewport += firstSetWidth * 2;
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
     }
     // Looping when scrolling to the left (before the first virtual set)
-    else if (currentTranslateX > -firstSetWidth * 0.1) { // Adjusted left threshold
+    else if (currentTranslateX > -firstSetWidth * 0.9) { // Adjusted left threshold (closer to -firstSetWidth)
+        console.log("Looping Left Triggered!");
+        console.log("currentTranslateX:", currentTranslateX);
+        console.log("firstSetWidth:", firstSetWidth);
         imageTrack.style.transition = 'none';
-        imageTrack.style.transform = `translateX(${-firstSetWidth * 1.9}px)`; // Reset to near the end
-        startXViewport -= firstSetWidth * 2; // Adjust startX for continuous leftward drag
+        imageTrack.style.transform = `translateX(${-firstSetWidth * 1}px)`; // Reset to the middle
+        startXViewport -= firstSetWidth * 2;
         requestAnimationFrame(() => {
             imageTrack.style.transition = 'transform 0.3s ease-in-out';
         });
