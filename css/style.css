@@ -242,6 +242,7 @@ a {
   padding: 10px;
 }
 #paginator #button {
+  border-radius: 3px;
   padding: 10px;
 }
 #paginator #button:hover {
