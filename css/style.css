@@ -140,7 +140,7 @@ a {
   padding: 10px;
   left: 0;
   bottom: 0;
-  width: auto;
+  width: 100vw;
   position: fixed;
 }
 
