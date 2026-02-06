@@ -74,7 +74,9 @@ GNOME is a window manager that is often hated because of the simplicity. There i
 
 <br>
 <h3 id="heading">$ Final Thoughts</h3>
-There are a lot of things that could deter the average person from using Linux, from the toxic user base to the daunting choices of distros, but I still think it's worth doing to get away from MacOS's hardware lock and Windows's growing AI push and monetization practices. To be frankly honest, in all my years using Linux, I find it's better to just ignore the suggestions of people and do your own research. There's tons of unbiased articles out there detailing the pros and cons of different distros and programs, so you don't ever have to talk head-on with a Linux cronie.
+There are a lot of things that could deter the average person from using Linux, from the toxic user base to the daunting choices of distros, but I still think it's worth doing to get away from MacOS's hardware lock and Windows's growing AI push and monetization practices.
+<br><br>
+To be frankly honest, in all my years using Linux, I find it's better to just ignore the suggestions of people and do your own research. There's tons of unbiased articles out there detailing the pros and cons of different distros and programs, so you don't ever have to talk head-on with a Linux cronie.
 &nbsp;  
 &nbsp;  
 
