@@ -32,7 +32,7 @@ One of the major gripes about people wanting to migrate away from Windows or Mac
 <br><br>
 For example, Mint, which is very popular for people who want a stable experience, has apps such as a software center, system settings, and user management, all without even opening the terminal.
 <br><br>
-Don't misunderstand me, though, this is definitely not a non-issue. For some problems, like broken packages, the terminal is the only option, so someone who doesn't know how to use it or isn't very tech-savvy is stuck in the dark with a broken OS, and has to turn to forums for help, which is one of the worst options for a new user.
+Don't misunderstand me, though, this is definitely not a non-issue. For some problems, like broken packages, the terminal is the only option, so someone who doesn't know how to use it or isn't very tech-savvy is stuck in the dark with a broken OS, and has to turn to forums for help, which is one of the worst options for a new user.  
 
 <br>
 <h3 id="heading">The Community</h3>
@@ -46,7 +46,8 @@ I want to take a moment to discuss the word 'bloat'. So many people use this to 
 <br><br>
 A more correct definition is specifically unrequired and <strong>_unwanted_</strong> software that takes up system resources such as disk space, CPU cycles, or RAM, and comes pre-installed.
 <br><br>
-One outrageous statement I saw the other day was: 'Mint is too bloated'. I did a double-take there because I wasn't sure I read that correctly. Linux Mint, one of the foremost user-friendly and lightweight operating systems, was _BLOATED_?? Sure, it comes with some extra stuff like LibreOffice and HexChat, but they're fairly out of the way if you don't want to use them, and combined, they take up no more than 2GB of disk space out of 20GB recommended space, according to the <a href="https://linuxmint.com/faq.php" target="_blank" rel="noopener noreferrer">Linux Mint FAQ</a>. Keep in mind that Windows take up about 32GB of space with a fresh install.
+One outrageous statement I saw the other day was: 'Mint is too bloated'. I did a double-take there because I wasn't sure I read that correctly. Linux Mint, one of the foremost user-friendly and lightweight operating systems, was _BLOATED_?? Sure, it comes with some extra stuff like LibreOffice and HexChat, but they're fairly out of the way if you don't want to use them, and combined, they take up no more than 2GB of disk space out of 20GB recommended space, according to the <a href="https://linuxmint.com/faq.php" target="_blank" rel="noopener noreferrer">Linux Mint FAQ</a>. Keep in mind that Windows take up about 32GB of space with a fresh install.  
+
 <br>
 <h3 id="heading">Unjustly Hated Components and Distros</h3>
 These are some distros, packages, programs, and system components that I've seen get a lot of flack for either user error or some other unjustified reason.
