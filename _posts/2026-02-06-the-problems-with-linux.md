@@ -6,7 +6,8 @@ keywords: linux, switch, migrate
 ---
 <h3 id="heading">What Even Is Linux?</h3>
 Linux. It's what the Internet runs on. But what is Linux? According to Linus Torvalds, the credited creator of Linux,
-> Linux is just a kernel. It's the part of the operating system that handles the hardware and the resources. It's the part that makes everything else possible.  
+> Linux is just a kernel. It's the part of the operating system that handles the hardware and the resources. It's the part that makes everything else possible.
+
 So, yes, the annoying jerks you find on forums babbling about "Erm, actually, it's Linux/GNU" are correct, but that's not the point. Nobody calls it Linux/GNU because it's implied that when you have Linux, it's paired with GNU tools.
 <br><br>
 Another often misinterpreted term is 'distribution' or the shortened 'distro'. A Linux distro is simply a set of configurations and extra packages stacked on top of a root version of Linux, such as Debian, Arch, Red Hat, NixOS, etc. Distros can even be based on other distros, for example, Mint is based on Ubuntu which is based on Debian. Sound complicated yet? If you really want to dig into the history and family tree of Linux, here's a <a href="https://en.wikipedia.org/wiki/List_of_Linux_distributions#/media/File:Linux_Distribution_Timeline.svg" target="_blank", rel="noopener noreferrer">timeline on Wikipedia</a> detailing just that.  
