@@ -3,7 +3,7 @@ title: "The Problems with Linux"
 date: 2026-02-06
 description: "Linux is good in many ways, but I'm here to discuss why it isn't"
 keywords: linux, switch, migrate, toxic, terminal, cachy, cachyos
-thumbnail: https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/main/_images/2026-02-06-tux-red-eyes.png
+thumbnail: https://raw.githubusercontent.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/main/_images/2026-02-06-tux-red-eyes.png
 ---
 <h3 id="heading">What Even Is Linux?</h3>
 Linux. It's what the Internet runs on. But what is Linux? According to Linus Torvalds, the credited creator of Linux,
