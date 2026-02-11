@@ -35,6 +35,7 @@ Since then, many other companies have released their own take on conversational 
 <h3 id="heading">Using Up the Resources</h3>
 Data centers are the driving force behind Large Language Models like ChatGPT, but they need an excessive amount of energy to do so. According to The U.S. Department of Energy: 
 > “...data centers consumed about 4.4% of total U.S. electricity in 2023 and are expected to consume approximately 6.7 to 12% of total U.S. electricity by 2028.”
+> <br>
 > (U.S. Department of Energy, 2024).
 
 In addition, they also stated that:
@@ -67,12 +68,14 @@ Well, Guillermo Del Toro, an accomplished screenwriter, director, and producer, 
 <br><br>
 In an interview at the 2017 BFI Film Festival in London, he deliberated:
 > "The value of art is not how much it costs and how little effort it requires, it’s how much would you risk to be in its presence? How much would people pay for those screensavers? Are they gonna make them cry because they lost a son? A mother? Because they misspent their youth? Fuck no."
+> <br>
 > (Del Toro, 2017)
 
 AI generated art is in many cases being treated the same as real art, which is hurting these people who spend their lives perfecting the practice and creating pieces with feeling and emotion. However, Del Toro isn’t the only one who thinks this way about AI.
 <br><br>
 Michael Bay, legendary director of many successful movie series such as Transformers, A Quiet Place, and The Purge, had this to say about it in an Instagram post:
 > “Speaking about A.I. - it doesn’t CREATE it just IMITATES. And will create a whole bunch of lazy people. So to all the Original Creators out there, have No Fear!”
+> <br>
 > (Bay, 2023).
 
 As he said, AI is trained on data such as pictures and videos, which are usually scraped from the world’s biggest dataset, The Internet, and it reforms them into something based on the data it was trained on. It does not create something new, and it certainly should not be considered true art on the same level as Del Toro’s and Bay’s works.
@@ -88,6 +91,7 @@ Then, for session four, the ChatGPT group had to write their essays using only t
 <br><br>
 They described the essays written by the LLM-to-Brain group in session 3 as:
 > “Low effort. Mostly copy-paste. Not significant distance to the default ChatGPT answer to the SAT prompt. Minimal editing. Impaired perceived ownership...”
+> <br>
 > (Kosmyna et al., 2025).
 
 By the end of the LLM-only part of the study for this group, they had become lazy, resorting to simply copying and pasting ChatGPT responses without review. They had lost most of their self-thinking that was shown in the Brain-to-LLM group in the first three sessions, but still scored relatively high with the help of human teachers, partly because the use of AI was not being accounted for.
