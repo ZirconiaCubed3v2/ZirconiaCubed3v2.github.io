@@ -32,7 +32,7 @@ Since then, many other companies have released their own take on conversational 
 <br><br>
 <br>
 
-<h3 id="heading">Using Up the Resources</h3>
+<h3 id="heading">Using Up the Energy</h3>
 Data centers are the driving force behind Large Language Models like ChatGPT, but they need an excessive amount of energy to do so. According to The U.S. Department of Energy: 
 > “...data centers consumed about 4.4% of total U.S. electricity in 2023 and are expected to consume approximately 6.7 to 12% of total U.S. electricity by 2028.”
 > <br>
@@ -47,6 +47,7 @@ There are third-world countries that want power and connection, but we’re spen
 <br><br>
 <br>
 
+<h3 id="heading">Drinking All the Water</h3>
 Another resource we’re running low on that AI is sucking up: water. Data centers need a lot of water to cool all the electronics, because they spit out a ton of heat doing all the math required to make up haikus.
 <br><br>
 As reported by Miguel Yañez-Barnuevo (2025) in a paper by the Environmental and Energy Study Institute:
