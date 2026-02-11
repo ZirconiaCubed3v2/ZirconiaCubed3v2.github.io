@@ -248,15 +248,51 @@ a {
 #paginator #button:hover {
   background-color: #555555;
 }
-
+#page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+#page-footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: #268bd2;
+}
+#page-footer p {
+  display: inline-block;
+  vertical-align: baseline;
+}
 
 
 @media screen and (max-width: 350px) {
   #paginator {
     padding: 0px;
   }
+  #page-footer {
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+  #page-footer a {
+    text-decoration: none;
+    color: #268bd2;
+  }
+  #page-footer p {
+  }
 }
 @media screen and (max-width: 690px) {
+  #page-footer {
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+  #page-footer a {
+    text-decoration: none;
+    color: #268bd2;
+  }
+  #page-footer p {
+  }
+  
   #postbody {
     margin-left: 0%;
     margin-right: 0%;
@@ -316,3 +352,7 @@ a {
     font-size: 18px
   }
 }
+
+<div style="display:flex;justify-content:space-between;align-items:center;margin-top:-20px;margin-bottom:-10px;">
+      <a href="https://github.com/zirconiacubed3v2" style="display:inline-block;text-decoration:none;color:#268bd2;">Follow me on Github</a>
+      <p style="display:inline-block;vertical-align:baseline;">All posts written by the hand of a real human without the use of AI</p>
