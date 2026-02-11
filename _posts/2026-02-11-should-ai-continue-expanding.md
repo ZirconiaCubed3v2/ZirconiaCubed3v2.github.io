@@ -3,7 +3,7 @@ title: "Should AI Continue Expanding?"
 date: 2026-02-11
 description: "No, no it should not. Here's why"
 keywords: ai, artificial intelligence, nvidia, chatgpt, openai, llm, claude, anthropic, google, gemini, evidence, opinion, op-ed
-thumbnail:
+thumbnail: https://raw.githubusercontent.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/main/_images/2026-02-11-server-stack.png
 ---
 <h3 id="heading">Lots of Money</h3>
 Big tech company Nvidia recently made a deal with the company behind ChatGPT, OpenAI, for $100B of funding to build new data centers. To put that into perspective, according to the Forbes 2025 World Billionaires list, only 15 people in the world have this much money to spend (Durot, 2025).
