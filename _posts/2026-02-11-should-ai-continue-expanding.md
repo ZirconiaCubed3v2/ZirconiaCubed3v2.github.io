@@ -110,8 +110,13 @@ There are some genuinely good uses for AI in the workplace, but these uses are n
 In conclusion, the cons of the continued growth and funding of AI egregiously outweigh the pros. There is no question as to whether or not this trend is good for our species as a whole and if we should keep going in this direction.
 <br><br>
 Too many people have had the shades pulled over their eyes, praising AI for all the work it has saved us and all the advancements it’s making, while secretly disabling our ability to think for ourselves.
-<br><br>
 <br>
+&nbsp;  
+&nbsp;  
+
+Stop with the AI,  
+<img src="https://github.com/ZirconiaCubed3v2/ZirconiaCubed3v2.github.io/blob/main/_images/sig.png?raw=true" alt="signature" style="width:250px;"/>
+<br><br>
 <br>
 
 <h3 id="heading" style="text-align: center;">References</h3>
