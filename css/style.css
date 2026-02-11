@@ -249,22 +249,15 @@ a {
   background-color: #555555;
 }
 #page-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: -20px;
   margin-bottom: 10px;
 }
 #page-footer a {
-  display: inline-block;
   text-decoration: none;
   color: #268bd2;
 }
 #page-footer p {
-  display: inline-block;
-  vertical-align: baseline;
 }
-
 
 @media screen and (max-width: 350px) {
   #paginator {
@@ -283,16 +276,21 @@ a {
 }
 @media screen and (max-width: 690px) {
   #page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: -20px;
     margin-bottom: 10px;
   }
   #page-footer a {
+    display: inline-block;
     text-decoration: none;
     color: #268bd2;
   }
   #page-footer p {
+    display: inline-block;
+    vertical-align: baseline;
   }
-  
   #postbody {
     margin-left: 0%;
     margin-right: 0%;
