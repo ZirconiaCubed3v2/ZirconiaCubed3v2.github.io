@@ -76,7 +76,7 @@ AI generated art is in many cases being treated the same as real art, which is h
 Michael Bay, legendary director of many successful movie series such as Transformers, A Quiet Place, and The Purge, had this to say about it in an Instagram post:
 > “Speaking about A.I. - it doesn’t CREATE it just IMITATES. And will create a whole bunch of lazy people. So to all the Original Creators out there, have No Fear!”
 > <br>
-> (Bay, 2023).
+> (Bay, 2023)
 
 As he said, AI is trained on data such as pictures and videos, which are usually scraped from the world’s biggest dataset, The Internet, and it reforms them into something based on the data it was trained on. It does not create something new, and it certainly should not be considered true art on the same level as Del Toro’s and Bay’s works.
 <br><br>
@@ -92,7 +92,7 @@ Then, for session four, the ChatGPT group had to write their essays using only t
 They described the essays written by the LLM-to-Brain group in session 3 as:
 > “Low effort. Mostly copy-paste. Not significant distance to the default ChatGPT answer to the SAT prompt. Minimal editing. Impaired perceived ownership...”
 > <br>
-> (Kosmyna et al., 2025).
+> (Kosmyna et al., 2025)
 
 By the end of the LLM-only part of the study for this group, they had become lazy, resorting to simply copying and pasting ChatGPT responses without review. They had lost most of their self-thinking that was shown in the Brain-to-LLM group in the first three sessions, but still scored relatively high with the help of human teachers, partly because the use of AI was not being accounted for.
 <br><br>
