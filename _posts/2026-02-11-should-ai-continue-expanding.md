@@ -5,13 +5,14 @@ description: "No, no it should not. Here's why"
 keywords: ai, artificial intelligence, nvidia, chatgpt, openai, llm, claude, anthropic, google, gemini, evidence, opinion, op-ed
 thumbnail:
 ---
-<h2 id="heading">A Firm NO</h2>
+<h3 id="heading">Lots of Money</h3>
 Big tech company Nvidia recently made a deal with the company behind ChatGPT, OpenAI, for $100B of funding to build new data centers. To put that into perspective, according to the Forbes 2025 World Billionaires list, only 15 people in the world have this much money to spend (Durot, 2025).
 <br><br>
 Why are we spending this much money on AI? Many people ask the same question every day, and yet, we continue to waste time and funds on the ability to generate a funny picture or an essay for a homework assignment.
 <br><br>
 <br>
 
+<h3 id="heading">A Firm NO</h3>
 To put it simply, AI should not be an endeavor humanity pools all their resources into. It is using up all our resources including water and energy, both of which have been on the low recently due to droughts and an increase in global electricity usage.
 <br><br>
 On top of that, the usage of AI for tasks like writing essays has been shown to decrease cognitive abilities, especially with heavy usage.
