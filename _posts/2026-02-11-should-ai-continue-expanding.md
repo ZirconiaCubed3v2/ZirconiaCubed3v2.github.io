@@ -121,20 +121,20 @@ Stop with the AI,
 
 <h3 id="heading" style="text-align: center;">References</h3>
 <p style="padding-left: 2em; text-indent: -2em;">
-Bay, M. [@michaelbay]. (2023, November 7). <em>Speaking about AI - it doesn’t create it just imitates [Photograph]</em>. Instagram. https://www.instagram.com/p/CzWU-2tMjuo/
+Bay, M. [@michaelbay]. (2023, November 7). <em>Speaking about AI - it doesn’t create it just imitates [Photograph]</em>. Instagram. <a href="https://www.instagram.com/p/CzWU-2tMjuo/" target="_blank" rel="noopener noreferrer">https://www.instagram.com/p/CzWU-2tMjuo/</a>
 </p>
 <p style="padding-left: 2em; text-indent: -2em;">
-Del Toro, G. (2017, December 6). <em>BFI screen talk: Guillermo del Toro | BFI London film festival 2017 [Video]</em>. YouTube. https://www.youtube.com/watch?v=rfbD3OBir64
+Del Toro, G. (2017, December 6). <em>BFI screen talk: Guillermo del Toro | BFI London film festival 2017 [Video]</em>. YouTube. <a href="https://www.youtube.com/watch?v=rfbD3OBir64" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=rfbD3OBir64</a>
 </p>
 <p style="padding-left: 2em; text-indent: -2em;">
-Durot, M. (2025, April 1). The $100B dollar club: These 15 people have 12-figure fortunes. <em>Forbes</em>. https://www.forbes.com/sites/mattdurot/2025/04/01/the-100-billion-club-these-15-people-have-12-figure-fortunes/
+Durot, M. (2025, April 1). The $100B dollar club: These 15 people have 12-figure fortunes. <em>Forbes</em>. <a href="https://www.forbes.com/sites/mattdurot/2025/04/01/the-100-billion-club-these-15-people-have-12-figure-fortunes/" target="_blank" rel="noopener noreferrer">https://www.forbes.com/sites/mattdurot/2025/04/01/the-100-billion-club-these-15-people-have-12-figure-fortunes/</a>
 </p>
 <p style="padding-left: 2em; text-indent: -2em;">
-Kosmyna, N., Hauptmann, E., Yuan, Y., Situ, J., Liao, X., Beresnitzky, A., Braunstein, I., & Maes, P. (2025, June). <em>Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task</em>. arXiv. https://arxiv.org/pdf/2506.08872v1
+Kosmyna, N., Hauptmann, E., Yuan, Y., Situ, J., Liao, X., Beresnitzky, A., Braunstein, I., & Maes, P. (2025, June). <em>Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task</em>. arXiv. <a href="https://arxiv.org/pdf/2506.08872v1" target="_blank" rel="noopener noreferrer">https://arxiv.org/pdf/2506.08872v1</a>
 </p>
 <p style="padding-left: 2em; text-indent: -2em;">
-U.S. Department of Energy. (2024, December 20). <em>DOE releases new report evaluating increase in electricity demand from data centers</em>. https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers
+U.S. Department of Energy. (2024, December 20). <em>DOE releases new report evaluating increase in electricity demand from data centers</em>. <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers" target="_blank" rel="noopener noreferrer">https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers</a>
 </p>
 <p style="padding-left: 2em; text-indent: -2em;">
-Yañez-Barnuevo, M. (2025, June 25). <em>Data centers and water consumption</em>. Environmental and Energy Study Institute. https://www.eesi.org/articles/view/data-centers-and-water-consumption
+Yañez-Barnuevo, M. (2025, June 25). <em>Data centers and water consumption</em>. Environmental and Energy Study Institute. <a href="https://www.eesi.org/articles/view/data-centers-and-water-consumption" target="_blank" rel="noopener noreferrer">https://www.eesi.org/articles/view/data-centers-and-water-consumption</a>
 </p>
