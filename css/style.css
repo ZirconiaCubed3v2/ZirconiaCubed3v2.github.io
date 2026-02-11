@@ -8,6 +8,7 @@ p {
   color: #26ff58;
   font-family: 'Cousine', monospace;
   font-weight: bold;
+  font-size: 15px;
 }
 li {
   color: #26ff58;
@@ -350,7 +351,3 @@ a {
     font-size: 18px
   }
 }
-
-<div style="display:flex;justify-content:space-between;align-items:center;margin-top:-20px;margin-bottom:-10px;">
-      <a href="https://github.com/zirconiacubed3v2" style="display:inline-block;text-decoration:none;color:#268bd2;">Follow me on Github</a>
-      <p style="display:inline-block;vertical-align:baseline;">All posts written by the hand of a real human without the use of AI</p>
