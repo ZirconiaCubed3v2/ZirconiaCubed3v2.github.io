@@ -1,0 +1,424 @@
+/* 3D printing status page.
+   Every rule is scoped under .printing so nothing here can leak into the blog.
+   Values are lifted straight out of css/style.css, not invented. */
+
+.printing {
+  /* palette, copied from style.css */
+  --pr-bg: #030303;
+  --pr-panel: #303030;
+  --pr-green: #26ff58;
+  --pr-blue: #268bd2;
+  --pr-muted: #839496;
+  --pr-orange: #ffb86c;
+  --pr-pink: #f926ff;
+  --pr-rule: #b58900;
+  --pr-border: #1f1f1f;
+  --pr-hover: #555555;
+  --pr-red: #ff5f56;
+
+  --pr-radius: 3px;
+  --pr-mono: 'Cousine', monospace;
+
+  display: block;
+  /* the shared .footer is position:fixed on very tall viewports */
+  padding-bottom: 40px;
+}
+
+.printing * {
+  box-sizing: border-box;
+}
+
+/* ---------- header ---------- */
+
+.printing-title {
+  color: #268bd2;
+  font-family: var(--pr-mono);
+  font-weight: bold;
+  font-size: 25pt;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
+
+.printing-intro {
+  max-width: 70ch;
+  line-height: 150%;
+}
+
+.printing-date {
+  color: var(--pr-muted);
+  font-family: var(--pr-mono);
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 0.5em;
+}
+
+.printing-stale {
+  color: var(--pr-orange);
+  font-family: var(--pr-mono);
+  font-weight: bold;
+  font-size: 13px;
+  border-left: 3px solid var(--pr-orange);
+  padding-left: 10px;
+  max-width: 70ch;
+}
+
+.printing-note {
+  color: var(--pr-muted);
+  max-width: 70ch;
+  font-size: 13px;
+  line-height: 150%;
+}
+
+.printing-loading,
+.printing-empty {
+  color: var(--pr-muted);
+  font-size: 14px;
+}
+
+.printing-construction {
+  color: var(--pr-green);
+  border: 1px solid var(--pr-border);
+  border-left: 3px solid var(--pr-orange);
+  border-radius: var(--pr-radius);
+  padding: 16px;
+  margin-top: 24px;
+  max-width: 70ch;
+  line-height: 160%;
+}
+
+.printing-construction .construction-tag {
+  display: block;
+  color: var(--pr-orange);
+  font-family: var(--pr-mono);
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.printing-noscript,
+.printing-error {
+  color: var(--pr-orange);
+  border: 1px solid var(--pr-border);
+  border-left: 3px solid var(--pr-rule);
+  border-radius: var(--pr-radius);
+  padding: 12px;
+  max-width: 70ch;
+  line-height: 150%;
+}
+
+.printing a {
+  color: var(--pr-blue);
+  text-decoration: none;
+}
+
+.printing a:hover,
+.printing a:focus-visible {
+  text-decoration: underline;
+}
+
+/* ---------- sections ---------- */
+
+.printing-section {
+  margin-top: 40px;
+}
+
+.printing-h2 {
+  color: var(--pr-blue);
+  font-family: var(--pr-mono);
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  border-bottom: 1px solid var(--pr-border);
+  padding-bottom: 6px;
+}
+
+.printing-h3 {
+  color: var(--pr-orange);
+  font-family: var(--pr-mono);
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 8px;
+}
+
+/* ---------- card grid ---------- */
+
+.printing .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* Printers get their own, much roomier grid. There will only ever be one to
+   three of them, so they read as the main event rather than as tiles. */
+.printing .printer-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  gap: 16px;
+  max-width: 1100px;
+}
+
+/* a lone printer shouldn't stretch the full width of a big monitor */
+.printing .printer-grid .pcard:only-child {
+  max-width: 700px;
+}
+
+.printing .printer-grid .pcard {
+  padding: 22px 20px 20px;
+}
+
+.printing .printer-grid .pcard-title {
+  font-size: 24px;
+  margin-bottom: 0.15em;
+}
+
+.printing .printer-grid .pcard-sub {
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.printing .printer-grid .badge {
+  font-size: 14px;
+  padding: 4px 11px;
+}
+
+.printing .printer-grid .pcard-line {
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.printing .printer-grid .pcard-note {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.printing .printer-grid .bar {
+  height: 14px;
+  margin: 14px 0 6px;
+}
+
+/* same look as the home page .card, as its own class rather than reusing
+   the invalid repeated ids */
+.printing .pcard {
+  padding: 15px 12px 12px;
+  border-radius: var(--pr-radius);
+  border: 1px solid var(--pr-border);
+  background-color: transparent;
+  min-width: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.printing .pcard:hover {
+  background-color: var(--pr-hover);
+}
+
+.printing .pcard-title {
+  color: var(--pr-blue);
+  font-family: var(--pr-mono);
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 0 0.1em;
+}
+
+.printing .pcard-sub {
+  color: var(--pr-muted);
+  font-family: var(--pr-mono);
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+
+.printing .pcard-line {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 145%;
+}
+
+.printing .pcard-label {
+  color: var(--pr-muted);
+}
+
+.printing .pcard-note {
+  color: var(--pr-muted);
+  font-size: 13px;
+  font-style: italic;
+  line-height: 145%;
+  margin: 8px 0 0;
+}
+
+/* ---------- badges ---------- */
+
+.printing .badge {
+  display: inline-block;
+  font-family: var(--pr-mono);
+  font-weight: bold;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: var(--pr-radius);
+  border: 1px solid currentColor;
+  margin: 2px 4px 2px 0;
+  white-space: nowrap;
+}
+
+/* status colours all clear 4.5:1 against #030303, and every one of them
+   carries a glyph as well so colour is never the only signal */
+.printing .badge-idle        { color: var(--pr-green); }
+.printing .badge-printing    { color: var(--pr-blue); }
+.printing .badge-booked      { color: var(--pr-orange); }
+.printing .badge-maintenance { color: var(--pr-rule); }
+.printing .badge-offline     { color: var(--pr-red); }
+.printing .badge-unknown     { color: var(--pr-muted); }
+
+.printing .badge-in    { color: var(--pr-green); }
+.printing .badge-low   { color: var(--pr-orange); }
+.printing .badge-out   { color: var(--pr-red); }
+.printing .badge-yes   { color: var(--pr-green); }
+.printing .badge-no    { color: var(--pr-muted); }
+
+.printing .tag {
+  display: inline-block;
+  font-family: var(--pr-mono);
+  font-weight: bold;
+  font-size: 11px;
+  color: var(--pr-muted);
+  border: 1px solid var(--pr-border);
+  border-radius: var(--pr-radius);
+  padding: 1px 6px;
+  margin: 2px 4px 2px 0;
+  white-space: nowrap;
+}
+
+/* ---------- progress bars ---------- */
+
+.printing .bar {
+  height: 8px;
+  border: 1px solid var(--pr-border);
+  border-radius: var(--pr-radius);
+  overflow: hidden;
+  margin: 8px 0 4px;
+  background-color: #0e0e0e;
+}
+
+.printing .bar-fill {
+  display: block;
+  height: 100%;
+  background-color: var(--pr-blue);
+  transition: width 400ms ease;
+}
+
+.printing .bar-fill.is-low  { background-color: var(--pr-orange); }
+.printing .bar-fill.is-out  { background-color: var(--pr-red); }
+.printing .bar-fill.is-full { background-color: var(--pr-green); }
+
+/* ---------- filament swatch ---------- */
+
+.printing .swatch {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--pr-muted);
+  vertical-align: -3px;
+  margin-right: 6px;
+  flex: 0 0 auto;
+}
+
+/* ---------- filters ---------- */
+
+.printing .filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.printing .filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.printing .chip {
+  font-family: var(--pr-mono);
+  font-weight: bold;
+  font-size: 13px;
+  color: var(--pr-muted);
+  background-color: transparent;
+  border: 1px solid var(--pr-border);
+  border-radius: var(--pr-radius);
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.printing .chip:hover {
+  background-color: var(--pr-hover);
+}
+
+.printing .chip[aria-pressed="true"] {
+  color: var(--pr-green);
+  border-color: var(--pr-green);
+}
+
+.printing .filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--pr-muted);
+  font-family: var(--pr-mono);
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.printing .filter-toggle input {
+  accent-color: var(--pr-green);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.printing .chip:focus-visible,
+.printing .filter-toggle input:focus-visible,
+.printing a:focus-visible {
+  outline: 2px solid var(--pr-pink);
+  outline-offset: 2px;
+}
+
+/* ---------- motion ---------- */
+
+@keyframes pr-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.35; }
+}
+
+.printing .badge-printing .glyph {
+  animation: pr-pulse 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .printing .badge-printing .glyph {
+    animation: none;
+  }
+  .printing .bar-fill {
+    transition: none;
+  }
+}
+
+/* ---------- breakpoints, matching style.css ---------- */
+
+@media screen and (max-width: 690px) {
+  .printing .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .printing-title {
+    font-size: 21pt;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .printing-intro,
+  .printing-note,
+  .printing-stale {
+    font-size: 16px;
+  }
+}

@@ -1,3 +1,17 @@
+# Ruby and Jekyll #
+###################
+.bundle/
+_site/
+.jekyll-cache/
+Gemfile
+Gemfile.lock
+
+#  My own stuff  #
+##################
+dev-only-info.md
+shell.nix
+3d-printing-page-plan.md
+
 # Compiled source #
 ###################
 *.com
